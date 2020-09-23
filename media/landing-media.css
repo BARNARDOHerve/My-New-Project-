@@ -1,0 +1,92 @@
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 0;
+        width: 120%;
+    }
+    .login-signup-btn {
+        display: none;
+    }
+    .log-wrapper {
+        width: 20%;
+    }
+    .nav-wrapper {
+        width: 60%;
+    }
+    #mobile-nav-btn {
+        width: 90%;
+    }
+    #mobile-nav-btn ul li button {
+        color: #FAF4F4;
+        background: #133359;
+        width: 80px;
+        padding: 5px;
+        border: 3px solid #145AC3;
+        border-radius: 20px 20px;
+        margin-left: 70%;
+        margin-top: 0.2em;
+    }
+    #mobile-nav-btn ul li button a {
+        color: #FAF4F4;
+        text-decoration: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-image-wrapper {
+        width: 75%;
+    }
+    .profile-image-wrapper img {
+        height: 250px;
+    }
+    .highright-text-wrapper {
+        width: 80%;
+    }
+    .highright-text-tagline {
+        width: 100%;
+        margin-top: 2em;
+    }
+    .line {
+        height: 210px;
+    }
+    footer {
+        width: 100%;
+        /* height: 25px; */
+        color: #FAF4F4;
+        /* position: absolute; */
+        padding-top: 20px;
+        padding-left: 80px;
+        /* background: red; */
+        margin-top: 5.5em;
+        background: rgb(4, 13, 33);
+        background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .profile-image-wrapper {
+        background-color: red;
+        /* width: ;
+        height: ; */
+    }
+    main {
+        margin-top: 10em;
+    }
+    footer {
+        margin-top: 17em;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1281px) {
+    .profile-image-wrapper {
+        background-color: red;
+        /* width: ;
+    height: ; */
+    }
+    main {
+        margin-top: 10em;
+    }
+    footer {
+        margin-top: 17em;
+    }
+}
