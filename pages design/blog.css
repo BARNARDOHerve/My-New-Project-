@@ -65,17 +65,15 @@
     }
     
     main {
-        width: 100%;
+        width: 98%;
         height: 540px;
-        display: flex;
-        justify-content: space-between;
+        margin-top: 1em;
+        margin-left: 1.5em;
     }
     
     .blog-post {
-        weight: 80%;
-        height: 520px;
-        margin-left: 4em;
-        margin-right: 5em;
+        width: 98%;
+        height: 530px;
         display: flex;
         justify-content: space-between;
         background: #133359;
@@ -93,76 +91,121 @@
     #d {
         margin-top: 0.5em;
         margin-left: 6em;
-        width: 40%;
-        height: 130px;
+        width: 50%;
+        height: 150px;
     }
     
     #d img {
         margin-left: 1em;
-        width: 75%;
+        width: 90%;
         height: 135px;
     }
     
     #z {
         margin-top: 0.8em;
         margin-left: 1em;
-        width: 60%;
+        width: 90%;
         height: 40px;
-        font-size: 16px;
+        font-size: 15px;
         color: #FAF4F4;
     }
     
     #s {
-        margin-top: 1.5em;
+        margin-top: 1em;
         margin-left: 1.5em;
         width: 90%;
         height: 150px;
     }
     
     #s img {
-        width: 80%;
-        height: 150px;
+        width: 90%;
+        height: 130px;
     }
     
     #y {
-        margin-top: 1.5em;
         margin-left: 1em;
-        width: 70%;
+        width: 90%;
         height: 60px;
-        font-size: 16px;
+        font-size: 15px;
         color: #FAF4F4;
     }
     
     .blog-conclusion {
-        width: 44.5%;
-        height: 480px;
-        margin-right: 3em;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        height: 450px;
+        margin-right: 1em;
     }
     
     #i {
-        margin-top: 3em;
-        width: 95%;
+        margin-top: 8em;
+        width: 100%;
         height: 300px;
     }
     
     #i img {
-        width: 98%;
-        height: 390px;
+        width: 90%;
+        height: 290px;
     }
     
     #l {
-        margin-left: 1.5em;
-        margin-top: 3.2em;
         width: 100%;
-        font-size: 28.5px;
+        font-size: 15px;
         color: #FAF4F4;
+    }
+    
+    .comment {
+        margin-top: 10em;
+        margin-bottom: 10em;
+        width: 90%;
+        height: 230px;
+    }
+    
+    .comment form {
+        margin-right: 0.2em;
+        margin-top: 2em;
+        margin-bottom: 10em;
+        width: 90%;
+        height: 180px;
+    }
+    
+    .comment form label {
+        color: #FAF4F4;
+    }
+    
+    #fname {
+        margin-left: 2.3em;
+        width: 70%;
+        background: #133359;
+        border: 2px solid #145AC3;
+        border-radius: 5px 5px;
+    }
+    
+    #comment {
+        margin-top: 1em;
+        width: 70%;
+        height: 100px;
+        background: #133359;
+        border: 3px solid #145AC3;
+        border-radius: 10px 10px;
+    }
+    
+    #send {
+        margin-top: 1em;
+        margin-left: 12em;
+        color: #FAF4F4;
+        background: #133359;
+        border: 2px solid #145AC3;
+        border-radius: 5px 5px;
     }
     
     footer {
         width: 94%;
-        height: 25px;
+        height: 20px;
         color: #FAF4F4;
         position: absolute;
+        margin-top: 0.3em;
         padding-top: 20px;
         padding-left: 80px;
         background: rgb(4, 13, 33);
