@@ -17,6 +17,10 @@
                 background-color: #030A1A;
             }
             
+            .mobile-nav-btn {
+                display: none
+            }
+            
             .nav-wrapper {
                 width: 40%;
             }
@@ -75,6 +79,7 @@
             
             .highright-text-wrapper {
                 height: 400px;
+                /* background-color: yellow; */
             }
             
             .highright-text-tagline {
@@ -86,7 +91,8 @@
                 float: right;
                 padding: 10px;
                 color: #FAF4F4;
-                margin-right: 7em;
+                /* margin-right: 7em; */
+                /* background-color: red; */
             }
             
             .line {
@@ -152,9 +158,13 @@
                 width: 94%;
                 height: 25px;
                 color: #FAF4F4;
-                position: absolute;
+                /* position: absolute; */
                 padding-top: 20px;
                 padding-left: 80px;
                 background: rgb(4, 13, 33);
                 background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
+            }
+            
+            #mobile-nav-btn {
+                display: none;
             }
