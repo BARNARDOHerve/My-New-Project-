@@ -151,3 +151,11 @@ footer {
     background: rgb(4, 13, 33);
     background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
 }
+
+.toggle-btn {
+    display: none
+}
+
+.mobile-sidebar {
+    display: none;
+}
