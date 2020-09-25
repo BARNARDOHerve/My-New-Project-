@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./media/landing-media.css">
 
     <link rel="stylesheet" href="./font-awesome/font-awesome/css/font-awesome.min.css">
+    <script src="./scripts/script.js"></script>
 </head>
 
 <body>
@@ -17,41 +18,46 @@
             <h3>Bardos</h3>
             <p>Software Engineer</p>
         </div>
-        <div class=" nav-wrapper ">
+        <div class="nav-wrapper">
             <nav>
                 <ul>
                     <li>
-                        <a href=" ">Home</a>
+                        <a href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a href="./pages/about.html ">About</a>
+                        <a href="./pages/about.html">About</a>
                     </li>
                     <li>
-                        <a href="./pages/blog.html ">Blog</a>
+                        <a href="./pages/blog.html">Blog</a>
                     </li>
                     <li>
-                        <a href="./pages/contact.html ">Contact</a>
+                        <a href="./pages/contact.html">Contact</a>
                     </li>
-                    <li class="login-signup-btn">
-                        <button><a href="./pages/login-in.html ">Log in</a></button></li>
-                    <li class="login-signup-btn">
-                        <button><a href="./pages/sign-up.html ">Sign up</a>
-                            </button></li>
+                    <li>
+                        <button><a href="./pages/login-in.html">Log in</a></button>
+                    </li>
+                    <li>
+                        <button><a href="./pages/sign-up.html">Sign up</a></button>
+                    </li>
                 </ul>
-
             </nav>
-            <div id="mobile-nav-btn">
-                <ul>
-                    <li>
-                        <button><a href="./pages/login-in.html ">Log in</a></button></li>
-                    <li>
-                        <button><a href="./pages/sign-up.html ">Sign up</a>
-                    </button></li>
-                </ul>
-
-            </div>
         </div>
     </header>
+    <div class="mobile-sidebar" id="sidebar">
+        <ul>
+            <li class="cursor-pointer"><a href="./pages/about.html">About</a></li>
+            <li class="cursor-pointer"><a href="./html/contact.html">Contact</a></li>
+            <li class="cursor-pointer"><a href="./html/blogs.html">Blogs</a> </li>
+            <li><a href="./html/singin.html"><button class="join-me-btn">Login</button></a> </li>
+            <li><a href="./html/singin.html"><button class="join-me-btn">Signup</button></a> </li>
+        </ul>
+    </div>
+    <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <main>
         <div class="profile-image-wrapper ">
             <img src="./assets/my profile.png " alt="My profile image ">
@@ -61,7 +67,7 @@
                 <div class="line "></div>
                 <div class="introduction ">
                     <p>Hey there!</p>
-                    <h2>I AM BARNARDO NTAGANIRA </h2>
+                    <h3>I AM BARNARDO NTAGANIRA </h3>
                     <p>Software Engineer Specializing in Web Development,Web Design and Software Development</p>
                     <ul>
                         <li>
