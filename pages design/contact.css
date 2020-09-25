@@ -1,213 +1,170 @@
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: 0;
-    }
-    
-    header {
-        width: 100%;
-        height: 40px;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    body {
-        width: 100%;
-        height: 100%;
-        background-color: #030A1A;
-    }
-    
-    .nav-wrapper {
-        width: 40%;
-    }
-    
-    nav {
-        color: white;
-        width: 100%;
-        height: 100%;
-    }
-    
-    nav ul {
-        width: 90%;
-        height: 100%;
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    nav ul li {
-        cursor: pointer;
-        list-style-type: none;
-    }
-    
-    nav ul li a {
-        color: #FAF4F4;
-        text-decoration: none;
-    }
-    
-    nav ul li button {
-        color: #FAF4F4;
-        background: #133359;
-        width: 80px;
-        padding: 5px;
-        border: 3px solid #145AC3;
-        border-radius: 20px 20px;
-    }
-    
-    nav ul li button:hover {
-        cursor: pointer;
-    }
-    
-    .log-wrapper {
-        width: 50%;
-        color: #FAF4F4;
-        padding-left: 80px;
-    }
-    
-    main {
-        width: 98%;
-        height: 540px;
-        margin-top: 1em;
-        margin-left: 1.5em;
-    }
-    
-    .main-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .primary-container {
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        padding: 30px;
-    }
-    
-    .form-wrapper {
-        padding: 10px;
-        width: 45%;
-        color: white;
-    }
-    
-    .form-wrapper form {
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    
-    .label-wrapper {
-        width: 100%;
-        padding-top: 1em;
-    }
-    
-    .input-wrapper {
-        width: 100%;
-        padding-top: 1em;
-    }
-    
-    .input-wrapper input,
-    textarea {
-        padding: 10px;
-        width: 90%;
-        border: 3px solid #145AC3;
-        border-radius: 10px 10px;
-        background: #133359;
-    }
-    
-    .input-wrapper input,
-    textarea::placeholder {
-        color: white;
-    }
-    
-    .highright-wrapper {
-        width: 45%;
-    }
-    
-    form button {
-        background: #133359;
-        border: 3px solid #145AC3;
-        border-radius: 10px 10px;
-        width: 50%;
-        cursor: pointer;
-        color: white;
-        padding: 5px;
-        margin-top: 1em;
-        margin-left: 6em;
-        grid-column-start: 2;
-    }
-    
-    .highright-box {
-        width: 90%;
-        padding: 5px;
-        color: white;
-        background: #133359;
-        border-radius: 20px 20px;
-        border: 5px solid #145AC3;
-        height: 235px;
-        margin-top: 2em;
-    }
-    
-    .highright-box h1 {
-        text-align: center;
-    }
-    
-    .highright-box p {
-        padding-top: 5px;
-        margin-left: 2em;
-        text-align: left;
-    }
-    
-    .highright-wrapper button {
-        border-radius: 10px 10px;
-        border: 3px solid #145AC3;
-        width: 30%;
-        cursor: pointer;
-        background: #133359;
-        color: white;
-        padding: 5px;
-        margin-top: 1em;
-        margin-left: 35%;
-    }
-    
-    .highright-wrapper h1 {
-        padding-top: 2em;
-    }
-    
-    .secondary-container {
-        padding: 20px;
-        width: 22%;
-        border-radius: 20px 20px;
-        background: #133359;
-        color: #FAF4F4;
-        border: 5px solid #145AC3;
-    }
-    
-    .secondary-container address {
-        /* margin-bottom: 1em; */
-        margin-left: 1.5em;
-        padding-top: 10px;
-    }
-    
-    .secondary-container address a {
-        text-decoration: none;
-        color: #FAF4F4;
-    }
-    
-    .secondary-container h3 {
-        margin-left: 0.5em;
-        padding-bottom: 15px;
-    }
-    
-    footer {
-        margin-top: 4em;
-        width: 94%;
-        height: 25px;
-        color: #FAF4F4;
-        position: relative;
-        padding-top: 20px;
-        padding-left: 80px;
-        background: rgb(4, 13, 33);
-        background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
-    }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #030A1A;
+}
+
+.nav-wrapper {
+    width: 40%;
+}
+
+nav {
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul {
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    cursor: pointer;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #FAF4F4;
+    text-decoration: none;
+}
+
+nav ul li button {
+    color: #FAF4F4;
+    background: #133359;
+    width: 80px;
+    padding: 5px;
+    border: 3px solid #145AC3;
+    border-radius: 20px 20px;
+}
+
+nav ul li button:hover {
+    cursor: pointer;
+}
+
+.log-wrapper {
+    width: 50%;
+    color: #FAF4F4;
+    padding-left: 80px;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    margin-top: 1em;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primary-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.form-wrapper {
+    padding: 10px;
+    width: 45%;
+    color: white;
+}
+
+.form-wrapper form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.label-wrapper {
+    width: 100%;
+    padding-top: 1em;
+}
+
+.input-wrapper {
+    width: 100%;
+    padding-top: 1em;
+}
+
+.input-wrapper input,
+textarea {
+    padding: 10px;
+    width: 90%;
+    border: 3px solid #145AC3;
+    border-radius: 10px 10px;
+    background: #133359;
+}
+
+.input-wrapper input,
+textarea::placeholder {
+    color: white;
+}
+
+form button {
+    background: #133359;
+    border: 3px solid #145AC3;
+    border-radius: 10px 10px;
+    width: 50%;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+    margin-top: 1em;
+    margin-left: 6em;
+    grid-column-start: 2;
+}
+
+.secondary-container {
+    margin-top: 5em;
+    width: 40%;
+    height: 180px;
+    color: #FAF4F4;
+    background: #133359;
+    border: 5px solid #145AC3;
+    border-radius: 20px 20px;
+}
+
+.secondary-container h3 {
+    margin-top: 1em;
+    margin-left: 4.5em;
+}
+
+.secondary-container address {
+    margin-left: 1.5em;
+    padding-top: 15px;
+}
+
+.secondary-container address a {
+    text-decoration: none;
+    color: #FAF4F4;
+}
+
+footer {
+    width: 94%;
+    height: 25px;
+    color: #FAF4F4;
+    margin-top: 1.5em;
+    padding-top: 20px;
+    padding-left: 80px;
+    background: rgb(4, 13, 33);
+    background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
+}
