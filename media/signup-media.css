@@ -44,11 +44,11 @@
         border-bottom: 1px solid rgba(100, 100, 100, 0.3);
     }
     .toggle-btn {
-        /* position: absolute;
-            left: 80%; */
+        position: absolute;
+        left: 70%;
         /* top: 40px; */
-        float: right;
-        padding-top: 1em;
+        /* float: right;
+        padding-top: 1em; */
     }
     .toggle-btn span {
         display: block;
@@ -143,6 +143,32 @@
         background: rgb(4, 13, 33);
         background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
     }
+    .general-container {
+        width: 90%;
+        padding: 0;
+        display: flex;
+    }
+    .first-container {
+        margin-top: 10%;
+        padding: 0;
+        /* margin: 0; */
+    }
+    .first-container form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .first-container {
+        width: 60%;
+    }
+    .input-items {
+        width: 80%;
+        /* padding-left: 1em; */
+    }
+    .second-container {
+        width: 50%;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -192,10 +218,10 @@
     }
     .toggle-btn {
         position: absolute;
-        left: 80%;
+        left: 70%;
         /* top: 40px; */
         /* float: right;
-            padding-top: 1em; */
+    padding-top: 1em; */
     }
     .toggle-btn span {
         display: block;
@@ -232,34 +258,89 @@
         font-family: 'Century Gothic';
     }
     /*--------------------------------------end of mobile sidebar css designs*/
-    .nav-wrapper {
-        width: 98%;
-    }
     .login-signup-btn {
-        padding-left: 20px;
-        /* background-color: red; */
+        display: none;
     }
-    .profile-image-wrapper {
-        width: 80%;
-        height: 400px;
+    .log-wrapper {
+        width: 30%;
     }
-    main {
-        /* margin-top: 10.9em; */
-        padding-top: 40%;
-    }
-    .introduction {
-        width: 95%;
-        height: 200px;
-        margin-right: 2em;
-    }
-    .line {
-        height: 190px;
-    }
-    footer {
-        margin-top: 21em;
+    .nav-wrapper {
+        width: 60%;
     }
     #mobile-nav-btn {
-        display: none;
+        width: 90%;
+    }
+    #mobile-nav-btn ul li button {
+        color: #FAF4F4;
+        background: #133359;
+        width: 80px;
+        padding: 5px;
+        border: 3px solid #145AC3;
+        border-radius: 20px 20px;
+        margin-left: 70%;
+        margin-top: 0.2em;
+    }
+    #mobile-nav-btn ul li button a {
+        color: #FAF4F4;
+        text-decoration: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-image-wrapper {
+        width: 75%;
+    }
+    .profile-image-wrapper img {
+        height: 250px;
+    }
+    .highright-text-wrapper {
+        width: 80%;
+    }
+    .highright-text-tagline {
+        width: 100%;
+        margin-top: 2em;
+    }
+    .line {
+        height: 210px;
+    }
+    footer {
+        width: 80%;
+        /* height: 25px; */
+        color: #FAF4F4;
+        /* position: absolute; */
+        padding-top: 20px;
+        padding-left: 80px;
+        /* background: red; */
+        margin-top: 18em;
+        background: rgb(4, 13, 33);
+        background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
+    }
+    .general-container {
+        width: 80%;
+        padding: 0;
+        display: flex;
+    }
+    .first-container {
+        margin-top: 10%;
+        padding: 0;
+        /* margin: 0; */
+    }
+    .first-container form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .first-container {
+        width: 60%;
+    }
+    .input-items {
+        width: 80%;
+        /* padding-left: 1em; */
+    }
+    .second-container {
+        width: 50%;
     }
 }
 
@@ -310,10 +391,10 @@
     }
     .toggle-btn {
         position: absolute;
-        left: 80%;
+        left: 70%;
         /* top: 40px; */
         /* float: right;
-            padding-top: 1em; */
+    padding-top: 1em; */
     }
     .toggle-btn span {
         display: block;
@@ -350,33 +431,88 @@
         font-family: 'Century Gothic';
     }
     /*--------------------------------------end of mobile sidebar css designs*/
-    .nav-wrapper {
-        width: 98%;
-    }
     .login-signup-btn {
-        padding-left: 20px;
-        /* background-color: red; */
+        display: none;
     }
-    .profile-image-wrapper {
-        width: 80%;
-        height: 400px;
+    .log-wrapper {
+        width: 30%;
     }
-    main {
-        /* margin-top: 10.9em; */
-        padding-top: 40%;
-    }
-    .introduction {
-        width: 95%;
-        height: 200px;
-        margin-right: 2em;
-    }
-    .line {
-        height: 190px;
-    }
-    footer {
-        margin-top: 21em;
+    .nav-wrapper {
+        width: 60%;
     }
     #mobile-nav-btn {
-        display: none;
+        width: 90%;
+    }
+    #mobile-nav-btn ul li button {
+        color: #FAF4F4;
+        background: #133359;
+        width: 80px;
+        padding: 5px;
+        border: 3px solid #145AC3;
+        border-radius: 20px 20px;
+        margin-left: 70%;
+        margin-top: 0.2em;
+    }
+    #mobile-nav-btn ul li button a {
+        color: #FAF4F4;
+        text-decoration: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-image-wrapper {
+        width: 75%;
+    }
+    .profile-image-wrapper img {
+        height: 250px;
+    }
+    .highright-text-wrapper {
+        width: 80%;
+    }
+    .highright-text-tagline {
+        width: 100%;
+        margin-top: 2em;
+    }
+    .line {
+        height: 210px;
+    }
+    footer {
+        width: 80%;
+        /* height: 25px; */
+        color: #FAF4F4;
+        /* position: absolute; */
+        padding-top: 20px;
+        padding-left: 80px;
+        /* background: red; */
+        margin-top: 18em;
+        background: rgb(4, 13, 33);
+        background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
+    }
+    .general-container {
+        width: 80%;
+        padding: 0;
+        display: flex;
+    }
+    .first-container {
+        margin-top: 10%;
+        padding: 0;
+        /* margin: 0; */
+    }
+    .first-container form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .first-container {
+        width: 60%;
+    }
+    .input-items {
+        width: 80%;
+        /* padding-left: 1em; */
+    }
+    .second-container {
+        width: 50%;
     }
 }
