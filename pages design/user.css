@@ -125,6 +125,11 @@ main {
     border-radius: 10px 10px;
 }
 
+.logout-wrapper button a {
+    color: #FAF4F4;
+    text-decoration: none;
+}
+
 .user-accout-settings {
     width: 70%;
     align-items: center;

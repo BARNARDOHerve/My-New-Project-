@@ -143,6 +143,11 @@ textarea::placeholder {
     border-radius: 10px 10px;
 }
 
+.button-wrapper button a {
+    color: #FAF4F4;
+    text-decoration: none;
+}
+
 footer {
     width: 94%;
     height: 25px;
