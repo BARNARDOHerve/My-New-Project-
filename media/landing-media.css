@@ -116,140 +116,17 @@
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 360px) {
-    .toggle-btn {
-        display: block
-    }
-    .mobile-sidebar {
-        display: block;
-    }
-    header {
-        display: none;
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .profile-image-wrapper {
-        width: 80%;
-        text-align: center;
-    }
-    .profile-image-wrapper img {
-        height: 200px;
-        width: 75%;
-        margin-top: 0;
-    }
-    .highright-text-tagline {
-        width: 90%;
-        margin-top: 0;
-    }
-    .line {
-        height: 190px;
-        margin-top: 0;
-    }
-    .introduction {
-        padding-top: 0;
-    }
-    footer {
-        margin-top: 2.3em;
-    }
-    /* Your CSS Here*/
-    .mobile-sidebar {
-        display: block;
-    }
-    .mobile-toggle-headere {
-        display: block;
-    }
-    #sidebar {
-        width: 200px;
-        height: 100%;
-        background: #145AC3;
-        position: fixed;
-        left: -200px;
-        transition: all 500ms linear;
-    }
-    .mobile-sidebar ul {
-        margin-top: 4em;
-    }
-    .mobile-sidebar ul li a {
-        color: white;
-        font-family: 'Century Gothic';
-        text-decoration: none;
-        padding-left: 20px;
-    }
-    #sidebar.active {
-        left: 0px;
-        float: left;
-        width: 90%;
-    }
-    #main-container.full {
-        width: 100%;
-    }
-    #sidebar ul li {
-        color: rgba(230, 230, 230, 0.9);
-        list-style: none;
-        padding: 15px 10px;
-        border-bottom: 1px solid rgba(100, 100, 100, 0.3);
-    }
-    .toggle-btn {
-        position: absolute;
-        left: 90%;
-        top: 10px;
-        float: right;
-    }
-    .toggle-btn span {
-        display: block;
-        width: 30px;
-        height: 5px;
-        background: white;
-        margin: 3px 0px;
-    }
-    #main-container {
-        clear: both;
-        width: 100%;
-        height: 100%;
-        transition: all 500ms linear;
-    }
-    .mobile-toggle-headere {
-        background: #ED994B;
-        width: 100%;
-        height: 40px;
-        padding: 10px;
-        position: sticky;
-        top: 0;
-    }
-    .active-router {
-        background: #c9803b;
-    }
-    .join-me-btn {
-        background: white;
-        color: #133359;
-        border-radius: 20px 20px;
-        border-width: 0px;
-        padding: 10px;
-        width: 100px;
-        cursor: pointer;
-        font-family: 'Century Gothic';
-    }
-}
-
-
-}
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     header {
         display: none;
     }
-    
     .mobile-sidebar {
         display: block;
     }
-    
     .toggle-btn {
         display: block;
     }
     /* ------------------------SIDE BAR DESIGN-------------------------- */
-    
     #sidebar {
         width: 200px;
         height: 100%;
@@ -259,42 +136,35 @@
         left: -200px;
         transition: all 500ms linear;
     }
-    
     .mobile-sidebar ul {
         margin-top: 4em;
     }
-    
     .mobile-sidebar ul li a {
         color: white;
         font-family: 'Century Gothic';
         text-decoration: none;
         padding-left: 20px;
     }
-    
     #sidebar.active {
         left: 0px;
         float: left;
         width: 95%;
     }
-    
     #main-container.full {
         width: 100%;
     }
-    
     #sidebar ul li {
         color: rgba(230, 230, 230, 0.9);
         list-style: none;
         padding: 15px 10px;
         border-bottom: 1px solid rgba(100, 100, 100, 0.3);
     }
-    
     .toggle-btn {
         position: absolute;
         left: 95%;
         top: 10px;
         float: left;
     }
-    
     .toggle-btn span {
         display: block;
         width: 30px;
@@ -302,7 +172,6 @@
         background: white;
         margin: 3px 0px;
     }
-    
     .mobile-toggle-headere {
         background: #ED994B;
         width: 100%;
@@ -311,11 +180,9 @@
         position: sticky;
         top: 0;
     }
-    
     .active-router {
         background: #c9803b;
     }
-    
     .join-me-btn {
         background: white;
         color: #133359;
@@ -327,55 +194,46 @@
         font-family: 'Century Gothic';
     }
     /*--------------------------------------end of mobile sidebar css designs*/
-    
     main {
         padding-top: 10em;
     }
-    
     .profile-image-wrapper {
         width: 60%;
         text-align: center;
         margin-top: 4em;
     }
-    
     .profile-image-wrapper img {
         height: 300px;
         width: 95%;
     }
-    
     .highright-text-tagline {
         width: 80%;
         margin-top: 0;
     }
-    
     .introduction {
         margin-top: 40%;
         padding-top: 0px;
     }
-    
     .line {
         height: 160px;
         margin-top: 40%;
     }
-    
     footer {
         margin-top: 18.9em;
     }
 }
+
 @media screen and (orientation: landscape) and (max-width: 1281px) {
     header {
         display: none;
     }
-    
     .mobile-sidebar {
         display: block;
     }
-    
     .toggle-btn {
         display: block;
     }
     /* ------------------------SIDE BAR DESIGN-------------------------- */
-    
     #sidebar {
         width: 200px;
         height: 100%;
@@ -385,18 +243,15 @@
         left: -200px;
         transition: all 500ms linear;
     }
-    
     .mobile-sidebar ul {
         margin-top: 4em;
     }
-    
     .mobile-sidebar ul li a {
         color: white;
         font-family: 'Century Gothic';
         text-decoration: none;
         padding-left: 20px;
     }
-    
     #sidebar.active {
         left: 0px;
         float: left;
@@ -405,21 +260,18 @@
     /* #main-container.full {
         width: 100%;
     } */
-    
     #sidebar ul li {
         color: rgba(230, 230, 230, 0.9);
         list-style: none;
         padding: 15px 10px;
         border-bottom: 1px solid rgba(100, 100, 100, 0.3);
     }
-    
     .toggle-btn {
         position: absolute;
         left: 95%;
         top: 10px;
         float: left;
     }
-    
     .toggle-btn span {
         display: block;
         width: 30px;
@@ -427,7 +279,6 @@
         background: white;
         margin: 3px 0px;
     }
-    
     .mobile-toggle-headere {
         background: #ED994B;
         width: 100%;
@@ -436,11 +287,9 @@
         position: sticky;
         top: 0;
     }
-    
     .active-router {
         background: #c9803b;
     }
-    
     .join-me-btn {
         background: white;
         color: #133359;
@@ -452,35 +301,28 @@
         font-family: 'Century Gothic';
     }
     /*--------------------------------------end of mobile sidebar css designs*/
-    
     main {
         padding-top: 5em;
     }
-    
     .profile-image-wrapper {
         width: 60%;
         text-align: center;
     }
-    
     .profile-image-wrapper img {
         height: 390px;
         width: 98%;
     }
-    
     .highright-text-tagline {
         width: 80%;
         margin-top: 0;
     }
-    
     .introduction {
         margin-top: 20%;
     }
-    
     .line {
         height: 130px;
         margin-top: 28%;
     }
-    
     footer {
         margin-top: 7.9em;
     }
