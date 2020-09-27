@@ -58,6 +58,10 @@ nav ul li button:hover {
     cursor: pointer;
 }
 
+nav ul li a:active {
+    text-decoration: underline;
+}
+
 .log-wrapper {
     width: 50%;
     color: #FAF4F4;
