@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #030A1A;
+}
+
+.nav-wrapper {
+    width: 10%;
+}
+
+nav {
+    color: white;
+    width: 100%;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    cursor: pointer;
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul li a {
+    color: #FAF4F4;
+    text-decoration: none;
+}
+
+nav ul li button {
+    width: 90px;
+    color: #FAF4F4;
+    background: #133359;
+    border: 1px solid #145AC3;
+    border-radius: 5px 5px;
+}
+
+.log-wrapper {
+    width: 50%;
+    color: #FAF4F4;
+    padding-left: 80px;
+}
+
+main {
+    width: 90%;
+    padding: 20px;
+}
+
+.main-container-wapper {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-bar {
+    width: 30%;
+}
+
+.item-size {
+    font-size: 25px;
+    width: 98%;
+    text-align: center;
+    color: #FAF4F4;
+    background: #133359;
+    border: 3px solid #145AC3;
+    border-radius: 10px 10px;
+}
+
+.secondary-item ul li {
+    list-style-type: none;
+    padding-top: 22px;
+    padding-bottom: 20px;
+}
+
+.logout-wrapper button {
+    width: 100%;
+}
+
+.logout-wrapper button a {
+    color: #FAF4F4;
+    text-decoration: none;
+}
+
+.admin-accout-settings {
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-profile {
+    width: 20%;
+    text-align: center;
+}
+
+.admin-profile img {
+    width: 60%;
+}
+
+.admin-profile button {
+    width: 95%;
+    color: #FAF4F4;
+    background: #133359;
+    border: 2px solid #145AC3;
+    border-radius: 5px 5px;
+}
+
+.admin-settings {
+    width: 60%;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.setting-wrapper {
+    width: 90%;
+    height: 115px;
+    padding-top: 10px;
+    margin-top: 20px;
+    color: #FAF4F4;
+    background: #0E4272;
+    border: 3px solid #3E68FD;
+    border-radius: 10px 10px;
+}
+
+.setting-wrapper button {
+    width: 40%;
+    color: #FAF4F4;
+    background: #0E4272;
+    border: 3px solid #3E68FD;
+    border-radius: 10px 10px;
+    margin-top: 5em;
+}
+
+footer {
+    width: 100%;
+    height: 25px;
+    color: #FAF4F4;
+    text-align: center;
+    margin-top: 0.9em;
+    padding-top: 10px;
+    background: rgb(4, 13, 33);
+    background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
+}

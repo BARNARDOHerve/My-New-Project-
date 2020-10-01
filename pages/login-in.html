@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barnardo Herve</title>
     <link rel="stylesheet" href="../pages design/login.css">
+    <link rel="stylesheet" href="../media/login-media.css">
     <link rel="stylesheet" href="./font-awesome/font-awesome/css/font-awesome.min.css">
+    <script src="../scripts/script.js"></script>
 </head>
 
 <body>
@@ -40,6 +42,21 @@
             </nav>
         </div>
     </header>
+    <div class="mobile-sidebar" id="sidebar">
+        <ul>
+            <li class="cursor-pointer"><a href="./pages/about.html">About</a></li>
+            <li class="cursor-pointer"><a href="./html/contact.html">Contact</a></li>
+            <li class="cursor-pointer"><a href="./html/blogs.html">Blogs</a> </li>
+            <li><a href="./html/singin.html"><button class="join-me-btn">Login</button></a> </li>
+            <li><a href="./html/singin.html"><button class="join-me-btn">Signup</button></a> </li>
+        </ul>
+    </div>
+    <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <main>
         <div class="main-container">
             <div class="form-wrapper">
@@ -58,7 +75,7 @@
                     </div>
                 </form>
                 <div class="button-wrapper ">
-                    <button>Login</button>
+                    <button><a href="../pages/admin.html">Login</a></button>
                 </div>
             </div>
         </div>
