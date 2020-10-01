@@ -73,11 +73,12 @@ main {
     display: flex;
     justify-content: space-around;
     margin-top: 1em;
-    height: 500px;
 }
 
 .profile-image-wrapper {
     width: 40%;
+    height: 500px;
+    text-align: center;
 }
 
 .profile-image-wrapper img {
@@ -90,14 +91,14 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 7em;
-    width: 50%;
+    width: 58%;
     color: #FAF4F4;
 }
 
 .line {
     margin-top: 3em;
-    width: 1%;
-    height: 138px;
+    width: 0.6%;
+    height: 129px;
     background: #FAF4F4;
     border-radius: 5px 5px;
 }

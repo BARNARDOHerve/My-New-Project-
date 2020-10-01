@@ -64,33 +64,21 @@ nav ul li button:hover {
 main {
     width: 90%;
     padding: 20px;
-    padding-left: 75px;
 }
 
 .main-container-wapper {
     width: 95%;
     display: flex;
     justify-content: space-between;
-    margin-top: 1em;
 }
 
 .side-bar {
-    width: 23%;
-    height: 180px;
-    margin-top: 1em;
+    width: 30%;
 }
 
 .item-size {
-    font-size: 24px;
-}
-
-.user-accout-settings {
-    width: 80%;
-}
-
-.primary-item {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 25px;
+    width: 98%;
     text-align: center;
     color: #FAF4F4;
     background: #133359;
@@ -99,30 +87,17 @@ main {
 }
 
 .secondary-item {
-    text-align: center;
-    color: #FAF4F4;
-    background: #133359;
-    border: 3px solid #145AC3;
-    border-radius: 10px 10px;
+    height: 420px;
 }
 
 .secondary-item ul li {
     list-style-type: none;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
-}
-
-.logout-wrapper {
-    text-align: center;
 }
 
 .logout-wrapper button {
     width: 100%;
-    color: #FAF4F4;
-    padding-top: 5px;
-    background: #133359;
-    border: 3px solid #145AC3;
-    border-radius: 10px 10px;
 }
 
 .logout-wrapper button a {
@@ -131,7 +106,7 @@ main {
 }
 
 .user-accout-settings {
-    width: 70%;
+    width: 80%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -144,7 +119,6 @@ main {
 
 .User-profile img {
     width: 60%;
-    height: 95px;
 }
 
 .User-profile button {
@@ -157,16 +131,18 @@ main {
 
 .user-settings {
     width: 60%;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    align-items: center;
     display: grid;
-    padding-left: 30px;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
 }
 
 .setting-wrapper {
-    width: 70%;
-    height: 90px;
-    padding: 15px;
+    width: 90%;
+    height: 115px;
+    padding-top: 10px;
     margin-top: 20px;
     color: #FAF4F4;
     background: #0E4272;
@@ -174,22 +150,22 @@ main {
     border-radius: 10px 10px;
 }
 
-.button-item {
-    margin-top: 3em;
-    width: 50%;
+.setting-wrapper button {
+    width: 40%;
     color: #FAF4F4;
     background: #0E4272;
     border: 3px solid #3E68FD;
     border-radius: 10px 10px;
+    margin-top: 5em;
 }
 
 footer {
-    width: 94%;
+    width: 100%;
     height: 25px;
     color: #FAF4F4;
-    margin-top: 2em;
-    padding-top: 20px;
-    padding-left: 80px;
+    text-align: center;
+    margin-top: 0.9em;
+    padding-top: 10px;
     background: rgb(4, 13, 33);
     background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
 }

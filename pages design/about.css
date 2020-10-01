@@ -1,155 +1,154 @@
-                        * {
-                            padding: 0;
-                            margin: 0;
-                            box-sizing: 0;
-                        }
-                        
-                        header {
-                            width: 100%;
-                            height: 40px;
-                            display: flex;
-                            justify-content: space-between;
-                        }
-                        
-                        body {
-                            width: 100%;
-                            height: 100%;
-                            background-color: #030A1A;
-                        }
-                        
-                        .nav-wrapper {
-                            width: 40%;
-                        }
-                        
-                        nav {
-                            color: white;
-                            width: 100%;
-                            height: 100%;
-                        }
-                        
-                        nav ul {
-                            width: 90%;
-                            height: 100%;
-                            align-items: center;
-                            display: flex;
-                            justify-content: space-between;
-                        }
-                        
-                        nav ul li {
-                            cursor: pointer;
-                            list-style-type: none;
-                        }
-                        
-                        nav ul li a {
-                            color: #FAF4F4;
-                            text-decoration: none;
-                        }
-                        
-                        nav ul li button {
-                            color: #FAF4F4;
-                            background: #133359;
-                            width: 80px;
-                            padding: 5px;
-                            border: 3px solid #145AC3;
-                            border-radius: 20px 20px;
-                        }
-                        
-                        nav ul li button:hover {
-                            cursor: pointer;
-                        }
-                        
-                        .log-wrapper {
-                            width: 50%;
-                            color: #FAF4F4;
-                            padding-left: 80px;
-                        }
-                        
-                        main {
-                            width: 80%;
-                            display: flex;
-                            justify-content: space-between;
-                            margin-top: 1em;
-                            padding: 50px;
-                            margin-left: 5em;
-                        }
-                        
-                        .skills {
-                            padding-top: 30px;
-                            padding-right: 40px;
-                            padding-bottom: 30px;
-                            padding-left: 40px;
-                            width: 38.5%;
-                            height: 352px;
-                            color: #FAF4F4;
-                            background: #133359;
-                            border: 3px solid #145AC3;
-                            border-radius: 30px 30px;
-                        }
-                        
-                        .skills h2 {
-                            width: 27%;
-                            height: 30px;
-                            padding-top: 10px;
-                            padding-left: 100px;
-                            font-size: 35px;
-                        }
-                        
-                        .skills ul {
-                            font-size: 25px;
-                            padding-top: 70px;
-                            align-items: center;
-                        }
-                        
-                        .skills ul li {
-                            align-items: flex-start;
-                            height: 30px;
-                            list-style-type: none;
-                        }
-                        
-                        .experience {
-                            padding-top: 30px;
-                            padding-right: 40px;
-                            padding-bottom: 30px;
-                            padding-left: 40px;
-                            width: 38.5%;
-                            height: 352px;
-                            color: #FAF4F4;
-                            background: #133359;
-                            border: 3px solid #145AC3;
-                            border-radius: 30px 30px;
-                        }
-                        
-                        .experience h2 {
-                            width: 30%;
-                            height: 30px;
-                            padding-top: 10px;
-                            padding-left: 100px;
-                            font-size: 35px;
-                        }
-                        
-                        #images {
-                            width: 100%;
-                            padding-top: 80px;
-                        }
-                        
-                        #images img {
-                            padding-top: 20px;
-                            padding-right: 10px;
-                            padding-bottom: 10px;
-                            padding-left: 30px;
-                        }
-                        
-                        #a {
-                            width: 15%;
-                            height: 60px;
-                        }
-                        
-                        footer {
-                            width: 94%;
-                            height: 30px;
-                            color: #FAF4F4;
-                            padding-top: 20px;
-                            padding-left: 80px;
-                            background: rgb(4, 13, 33);
-                            background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
-                        }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: 0;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    body {
+        width: 100%;
+        background-color: #030A1A;
+    }
+    
+    .nav-wrapper {
+        width: 40%;
+    }
+    
+    nav {
+        color: white;
+        width: 100%;
+        height: 100%;
+    }
+    
+    nav ul {
+        width: 90%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav ul li {
+        cursor: pointer;
+        list-style-type: none;
+    }
+    
+    nav ul li a {
+        color: #FAF4F4;
+        text-decoration: none;
+    }
+    
+    nav ul li button {
+        color: #FAF4F4;
+        background: #133359;
+        width: 80px;
+        border: 3px solid #145AC3;
+        border-radius: 20px 20px;
+    }
+    
+    nav ul li button:hover {
+        cursor: pointer;
+    }
+    
+    nav ul li a:active {
+        text-decoration: underline;
+    }
+    
+    .log-wrapper {
+        width: 50%;
+        color: #FAF4F4;
+        padding-left: 80px;
+    }
+    
+    main {
+        width: 100%;
+        height: 483px;
+        margin-top: 2em;
+    }
+    
+    .general-container {
+        padding-top: 10px;
+        width: 100%;
+        align-items: center;
+        height: 483px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .skills {
+        padding-top: 30px;
+        width: 38.5%;
+        height: 352px;
+        color: #FAF4F4;
+        background: #133359;
+        border: 3px solid #145AC3;
+        border-radius: 30px 30px;
+    }
+    
+    .skills h2 {
+        text-align: center;
+        width: 100%;
+        height: 30px;
+        padding-top: 10px;
+        font-size: 35px;
+    }
+    
+    .skills ul {
+        font-size: 25px;
+        padding: 30px;
+    }
+    
+    .skills ul li {
+        width: 60%;
+        height: 30px;
+        list-style-type: none;
+    }
+    
+    .experience {
+        padding-top: 30px;
+        width: 38.5%;
+        height: 352px;
+        color: #FAF4F4;
+        background: #133359;
+        border: 3px solid #145AC3;
+        border-radius: 30px 30px;
+    }
+    
+    .experience h2 {
+        text-align: center;
+        width: 100%;
+        height: 30px;
+        padding-top: 10px;
+        font-size: 35px;
+    }
+    
+    .images {
+        width: 50%;
+        padding: 60px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 35px;
+    }
+    
+    .images img {
+        width: 70%;
+        height: 60px;
+    }
+    
+    footer {
+        width: 100%;
+        height: 25px;
+        color: #FAF4F4;
+        margin-top: 1.5em;
+        padding-top: 20px;
+        text-align: center;
+        background: rgb(4, 13, 33);
+        background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
+    }
