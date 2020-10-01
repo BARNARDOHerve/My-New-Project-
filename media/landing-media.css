@@ -1,21 +1,52 @@
 @media only screen and (max-width: 600px) {
+    .toggle-btn {
+        display: block
+    }
+    .mobile-sidebar {
+        display: block;
+    }
     header {
-        padding: 0;
-        width: 120%;
         display: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-image-wrapper {
+        width: 80%;
+        text-align: center;
+    }
+    .profile-image-wrapper img {
+        height: 200px;
+        width: 75%;
+        margin-top: 0;
+    }
+    .highright-text-tagline {
+        width: 90%;
+        margin-top: 0;
+    }
+    .line {
+        height: 190px;
+        margin-top: 0;
+    }
+    .introduction {
+        padding-top: 0;
+    }
+    footer {
+        margin-top: 2.3em;
     }
     /* Your CSS Here*/
     .mobile-sidebar {
         display: block;
     }
-    .toggle-btn {
+    .mobile-toggle-headere {
         display: block;
     }
-    /* ------------------------SIDE BAR DESIGN-------------------------- */
     #sidebar {
         width: 200px;
         height: 100%;
-        background: #133359;
+        background: #145AC3;
         position: fixed;
         left: -200px;
         transition: all 500ms linear;
@@ -32,7 +63,7 @@
     #sidebar.active {
         left: 0px;
         float: left;
-        width: 75%;
+        width: 90%;
     }
     #main-container.full {
         width: 100%;
@@ -44,11 +75,10 @@
         border-bottom: 1px solid rgba(100, 100, 100, 0.3);
     }
     .toggle-btn {
-        /* position: absolute;
-                    left: 80%; */
-        /* top: 40px; */
+        position: absolute;
+        left: 90%;
+        top: 10px;
         float: right;
-        padding-top: 1em;
     }
     .toggle-btn span {
         display: block;
@@ -83,78 +113,13 @@
         width: 100px;
         cursor: pointer;
         font-family: 'Century Gothic';
-    }
-    /*--------------------------------------end of mobile sidebar css designs*/
-    .login-signup-btn {
-        display: none;
-    }
-    .log-wrapper {
-        width: 30%;
-    }
-    .nav-wrapper {
-        width: 60%;
-    }
-    #mobile-nav-btn {
-        width: 90%;
-    }
-    #mobile-nav-btn ul li button {
-        color: #FAF4F4;
-        background: #133359;
-        width: 80px;
-        padding: 5px;
-        border: 3px solid #145AC3;
-        border-radius: 20px 20px;
-        margin-left: 70%;
-        margin-top: 0.2em;
-    }
-    #mobile-nav-btn ul li button a {
-        color: #FAF4F4;
-        text-decoration: none;
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-        padding-left: 2em;
-    }
-    .profile-image-wrapper {
-        width: 75%;
-        align-items: center
-    }
-    .profile-image-wrapper img {
-        margin-left: 1.5em;
-        height: 220px;
-    }
-    .highright-text-wrapper {
-        width: 80%;
-    }
-    .highright-text-tagline {
-        width: 100%;
-        margin-top: 2em;
-    }
-    .line {
-        height: 210px;
-    }
-    footer {
-        width: 100%;
-        /* height: 25px; */
-        color: #FAF4F4;
-        /* position: relative; */
-        /* margin-top: 10em; */
-        padding-left: 50px;
-        /* background: red; */
-        margin-top: 8.5em;
-        background: rgb(4, 13, 33);
-        background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
     }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     header {
-        padding: 0;
-        width: 120%;
         display: none;
     }
-    /* Your CSS Here*/
     .mobile-sidebar {
         display: block;
     }
@@ -165,6 +130,7 @@
     #sidebar {
         width: 200px;
         height: 100%;
+        padding-bottom: 0px;
         background: #133359;
         position: fixed;
         left: -200px;
@@ -182,7 +148,7 @@
     #sidebar.active {
         left: 0px;
         float: left;
-        width: 75%;
+        width: 95%;
     }
     #main-container.full {
         width: 100%;
@@ -190,15 +156,14 @@
     #sidebar ul li {
         color: rgba(230, 230, 230, 0.9);
         list-style: none;
-        padding: 15px 40px;
+        padding: 15px 10px;
         border-bottom: 1px solid rgba(100, 100, 100, 0.3);
     }
     .toggle-btn {
         position: absolute;
-        left: 80%;
-        /* top: 40px; */
-        /* float: right;
-                    padding-top: 1em; */
+        left: 95%;
+        top: 10px;
+        float: left;
     }
     .toggle-btn span {
         display: block;
@@ -206,12 +171,6 @@
         height: 5px;
         background: white;
         margin: 3px 0px;
-    }
-    #main-container {
-        clear: both;
-        width: 100%;
-        height: 100%;
-        transition: all 500ms linear;
     }
     .mobile-toggle-headere {
         background: #ED994B;
@@ -235,49 +194,39 @@
         font-family: 'Century Gothic';
     }
     /*--------------------------------------end of mobile sidebar css designs*/
-    .nav-wrapper {
-        width: 95%;
-    }
-    .login-signup-btn {
-        padding-left: 20px;
-        /* background-color: red; */
+    main {
+        padding-top: 10em;
     }
     .profile-image-wrapper {
-        width: 80%;
-        height: 300px;
-        margin-top: 5em;
+        width: 60%;
+        text-align: center;
+        margin-top: 4em;
     }
     .profile-image-wrapper img {
-        width: 80%;
-        height: 250px;
+        height: 300px;
+        width: 95%;
     }
-    main {
-        /* margin-top: 10.9em; */
-        padding-top: 20%;
+    .highright-text-tagline {
+        width: 80%;
+        margin-top: 0;
     }
     .introduction {
-        width: 80%;
-        height: 200px;
+        margin-top: 40%;
+        padding-top: 0px;
     }
     .line {
-        height: 190px;
-        margin-left: 6em;
+        height: 160px;
+        margin-top: 40%;
     }
     footer {
-        margin-top: 14.9em;
-    }
-    #mobile-nav-btn {
-        display: none;
+        margin-top: 18.9em;
     }
 }
 
 @media screen and (orientation: landscape) and (max-width: 1281px) {
     header {
-        padding: 0;
-        width: 120%;
         display: none;
     }
-    /* Your CSS Here*/
     .mobile-sidebar {
         display: block;
     }
@@ -288,6 +237,7 @@
     #sidebar {
         width: 200px;
         height: 100%;
+        padding-bottom: 0px;
         background: #133359;
         position: fixed;
         left: -200px;
@@ -305,23 +255,22 @@
     #sidebar.active {
         left: 0px;
         float: left;
-        width: 78%;
+        width: 95%;
     }
-    #main-container.full {
+    /* #main-container.full {
         width: 100%;
-    }
+    } */
     #sidebar ul li {
         color: rgba(230, 230, 230, 0.9);
         list-style: none;
-        padding: 15px 50px;
+        padding: 15px 10px;
         border-bottom: 1px solid rgba(100, 100, 100, 0.3);
     }
     .toggle-btn {
         position: absolute;
-        left: 80%;
-        /* top: 40px; */
-        /* float: right;
-                    padding-top: 1em; */
+        left: 95%;
+        top: 10px;
+        float: left;
     }
     .toggle-btn span {
         display: block;
@@ -329,12 +278,6 @@
         height: 5px;
         background: white;
         margin: 3px 0px;
-    }
-    #main-container {
-        clear: both;
-        width: 100%;
-        height: 100%;
-        transition: all 500ms linear;
     }
     .mobile-toggle-headere {
         background: #ED994B;
@@ -358,38 +301,29 @@
         font-family: 'Century Gothic';
     }
     /*--------------------------------------end of mobile sidebar css designs*/
-    .nav-wrapper {
-        width: 98%;
-    }
-    .login-signup-btn {
-        padding-left: 20px;
-        /* background-color: red; */
+    main {
+        padding-top: 5em;
     }
     .profile-image-wrapper {
-        width: 80%;
-        height: 300px;
-        margin-top: 0.5em;
+        width: 60%;
+        text-align: center;
     }
     .profile-image-wrapper img {
-        width: 80%;
         height: 390px;
+        width: 98%;
     }
-    main {
-        /* margin-top: 10.9em; */
-        padding-top: 3%;
+    .highright-text-tagline {
+        width: 80%;
+        margin-top: 0;
     }
     .introduction {
-        width: 80%;
-        height: 200px;
+        margin-top: 20%;
     }
     .line {
-        height: 150px;
-        margin-left: 6em;
+        height: 130px;
+        margin-top: 28%;
     }
     footer {
-        margin-top: 6.2em;
-    }
-    #mobile-nav-btn {
-        display: none;
+        margin-top: 7.9em;
     }
 }
