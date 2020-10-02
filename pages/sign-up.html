@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barnardo Herve</title>
-    <link rel="stylesheet" href="../pages design/signup.css">
+    <link rel="stylesheet" href="../pages-design/signup.css">
     <link rel="stylesheet" href="../media/signup-media.css">
     <link rel="stylesheet" href="./font-awesome/font-awesome/css/font-awesome.min.css">
-    <script src="../scripts/script.js"></script>
+
 </head>
 
 <body>
@@ -60,32 +60,45 @@
     <main>
         <div class="general-container">
             <div class="first-container">
-                <form action="">
+                <form action="" onsubmit="event.preventDefault()">
                     <label for="Fname" class="label-items"><b>First name:</b></label>
-                    <div class="input-items"><input type="text" placeholder="Enter First name" name="Fname" required></div>
+                    <div class="input-items">
+                        <input type="text" placeholder="Enter First name" name="Fname" id="Fname" required>
+                    </div>
 
-                    <label for="fname" class="label-items"><b>Family name:</b></label>
-                    <div class="input-items"><input type="text" placeholder="Enter Family name" name="fname" required></div>
+                    <label for=" fname " class="label-items "><b>Family name:</b></label>
+                    <div class="input-items"><input type="text" placeholder="Enter Family name" name="fname" id="fname" required></div>
 
-                    <label for="email" class="label-items"><b>Email:</b></label>
-                    <div class="input-items"><input type="text" placeholder="Enter Email" name="email" required></div>
+                    <label for="email " class="label-items"><b>Email:</b></label>
+                    <div class="input-items "><input type="text " placeholder="Enter Email" name="email" id="email" required></div>
 
-                    <label for="psw" class="label-items"><b>Password:</b></label>
-                    <div class="input-items"><input type="password" placeholder="Enter Password" name="psw" required></div>
+                    <label for="psw " class="label-items"><b>Password:</b></label>
+                    <div class="input-items"><input type="password" placeholder="Enter Password " name="psw " id="password" required></div>
+                    <!-- <input type="password" name="" id=""> -->
 
                     <label for="psw-repeat" class="label-items"><b>Repeat Password:</b></label>
-                    <div class="input-items"><input type="password" placeholder="Repeat Password" name="psw-repeat" required></div>
+                    <div class="input-items"><input type="password" placeholder="Repeat Password" name="psw-repeat" id="check" required></div>
                 </form>
             </div>
-            <div class="second-container">
-                <button type="submit" class="signupbtn"><a href="../pages/user.html">Sign Up</a></button>
+            <div class="second-container ">
+                <button type="submit" class="signupbtn" onclick="newUser()">Sign Up</button>
             </div>
         </div>
     </main>
     <footer>
         <p> Copyright BARNARDO Ntaganira Herve 2020</p>
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js "></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="../scripts/firebase.js "></script>
+    <script src="../scripts/app.js "></script>
+    <script src="../scripts/script.js "></script>
 </body>
 
 </html>

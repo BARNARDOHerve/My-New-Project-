@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barnardo Herve</title>
-    <link rel="stylesheet" href="../pages design/login.css">
+    <link rel="stylesheet" href="../pages-design/login.css">
     <link rel="stylesheet" href="../media/login-media.css">
     <link rel="stylesheet" href="./font-awesome/font-awesome/css/font-awesome.min.css">
-    <script src="../scripts/script.js"></script>
 </head>
 
 <body>
@@ -60,29 +59,41 @@
     <main>
         <div class="main-container">
             <div class="form-wrapper">
-                <form action="">
-                    <div class="label-wrapper">
+                <form action="" onsubmit="event.preventDefault()">
+                    <div class=" label-wrapper">
                         <label for=" ">E-mail:</label>
                     </div>
-                    <div class="input-wrapper ">
-                        <input type="text " placeholder="Your email ">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Your email" id="email">
                     </div>
-                    <div class=" label-wrapper">
+                    <div class=" label-wrapper ">
                         <label for=" ">Password:</label>
                     </div>
                     <div class="input-wrapper ">
-                        <input type="password " placeholder="Your Password ">
+                        <input type="password" placeholder="Your Password" id="password">
                     </div>
                 </form>
-                <div class="button-wrapper ">
-                    <button><a href="../pages/admin.html">Login</a></button>
+                <div class="button-wrapper">
+                    <button onclick="loginUser()">Login</button>
                 </div>
+
             </div>
         </div>
     </main>
     <footer>
         <p> Copyright BARNARDO Ntaganira Herve 2020</p>
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js "></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="../scripts/firebase.js "></script>
+    <script src="../scripts/app.js "></script>
+    <script src="../scripts/script.js "></script>
 
 </body>
 
