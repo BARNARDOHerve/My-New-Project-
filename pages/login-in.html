@@ -7,7 +7,7 @@
     <title>Barnardo Herve</title>
     <link rel="stylesheet" href="../pages-design/login.css">
     <link rel="stylesheet" href="../media/login-media.css">
-    <link rel="stylesheet" href="./font-awesome/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../font-awesome/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -59,22 +59,25 @@
     <main>
         <div class="main-container">
             <div class="form-wrapper">
+                <p id="errorMessage"></p>
                 <form action="" onsubmit="event.preventDefault()">
                     <div class=" label-wrapper">
                         <label for=" ">E-mail:</label>
                     </div>
                     <div class="input-wrapper">
-                        <input type="text" placeholder="Your email" id="email">
+                        <input type="text" placeholder="words@example.com" id="email">
+
                     </div>
                     <div class=" label-wrapper ">
                         <label for=" ">Password:</label>
                     </div>
                     <div class="input-wrapper ">
                         <input type="password" placeholder="Your Password" id="password">
+
                     </div>
                 </form>
                 <div class="button-wrapper">
-                    <button onclick="loginUser()">Login</button>
+                    <button onclick="userLogin()">Login</button>
                 </div>
 
             </div>
@@ -83,7 +86,7 @@
     <footer>
         <p> Copyright BARNARDO Ntaganira Herve 2020</p>
     </footer>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js "></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js "></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js "></script>

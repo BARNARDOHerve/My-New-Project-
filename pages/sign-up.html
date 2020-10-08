@@ -60,24 +60,38 @@
     <main>
         <div class="general-container">
             <div class="first-container">
+                <p id="errorMessage">
+                </p>
                 <form action="" onsubmit="event.preventDefault()">
                     <label for="Fname" class="label-items"><b>First name:</b></label>
                     <div class="input-items">
                         <input type="text" placeholder="Enter First name" name="Fname" id="Fname" required>
+                        <!-- <i id="firstNameWarning" class="fas fa-exclamation-circle warning warning-hide"></i> -->
                     </div>
 
-                    <label for=" fname " class="label-items "><b>Family name:</b></label>
-                    <div class="input-items"><input type="text" placeholder="Enter Family name" name="fname" id="fname" required></div>
+                    <label for=" fname " class="label-items "><b>Last name:</b></label>
+                    <div class="input-items">
+                        <input type="text" placeholder="Enter last name" name="fname" id="fname" required>
+                        <!-- <i id="lastNameWarning" class="fas fa-exclamation-circle warning warning-hide"></i> -->
+                    </div>
 
                     <label for="email " class="label-items"><b>Email:</b></label>
-                    <div class="input-items "><input type="text " placeholder="Enter Email" name="email" id="email" required></div>
+                    <div class="input-items ">
+                        <input type="text " placeholder="words@example.com" name="email" id="email" required>
+                        <!-- <i id="emailWarning" class="fas fa-exclamation-circle warning warning-hide"></i> -->
+                    </div>
 
                     <label for="psw " class="label-items"><b>Password:</b></label>
-                    <div class="input-items"><input type="password" placeholder="Enter Password " name="psw " id="password" required></div>
-                    <!-- <input type="password" name="" id=""> -->
+                    <div class="input-items">
+                        <input type="password" placeholder="Enter Password " name="psw " id="password" required>
+                        <!-- <i id="passwordWarning" class="fas fa-exclamation-circle warning warning-hide"></i> -->
+                    </div>
 
-                    <label for="psw-repeat" class="label-items"><b>Repeat Password:</b></label>
-                    <div class="input-items"><input type="password" placeholder="Repeat Password" name="psw-repeat" id="check" required></div>
+                    <label for="psw-repeat" class="label-items"><b>Confirm Password:</b></label>
+                    <div class="input-items">
+                        <input type="password" placeholder="confirm Password" name="psw-repeat" id="check" required>
+                        <!-- <i id="confirmPasswordWarning" class="fas fa-exclamation-circle warning warning-hide"></i> -->
+                    </div>
                 </form>
             </div>
             <div class="second-container ">
