@@ -146,6 +146,13 @@ textarea::placeholder {
     text-decoration: none;
 }
 
+.warning {
+    color: red;
+    background: white;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
 footer {
     width: 94%;
     height: 25px;
@@ -163,4 +170,9 @@ footer {
 
 .mobile-sidebar {
     display: none;
+}
+
+#errorMessage {
+    color: red !important;
+    text-align: center;
 }
