@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barnardo Herve</title>
-    <link rel="stylesheet" href="../pages-design/blog.css">
+    <link rel="stylesheet" href="../pages-design/create-blog.css">
     <link rel="stylesheet" href="./font-awesome/font-awesome/css/font-awesome.min.css">
 </head>
 
@@ -41,34 +41,25 @@
         </div>
     </header>
     <main>
-        <div class="blog-post-container">
+        <form action="" class="form-container">
+            <label for="">Title</label><br>
+            <input type="text" id="title">
+            <br></br>
 
-            <div class="blog-item-one">
-                <h4>Agile Methodology</h4>
-                <img src="../assets/team 2.png" alt="agile team">
-                <button>Read-more</button>
-            </div>
-            <div class="blog-item-one">
-                <h4>Pogramming Language</h4>
-                <img src="../assets/bhanu 1.png" alt="codes background">
-                <button>Read-more</button>
-            </div>
-            <div class="blog-item-one">
-                <h4>Pogramming Language</h4>
-                <img src="../assets/bhanu 1.png" alt="codes background">
-                <button>Read-more</button>
-            </div>
-            <div class="blog-item-one">
-                <h4>Pogramming Language</h4>
-                <img src="../assets/bhanu 1.png" alt="codes background">
-                <button>Read-more</button>
-            </div>
+            <label for="">Body</label><br>
+            <textarea name="" id="paragraph" cols="30" rows="10"></textarea>
+            <br></br>
 
-        </div>
+            <label for="">image</label>
+            <input type="file" id="image" onchange="getBlogImage()">
+            <br></br>
+            <button>create blog</button>
+        </form>
     </main>
     <footer>
         <p> Copyright BARNARDO Ntaganira Herve 2020</p>
     </footer>
+
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js "></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js "></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js "></script>
@@ -78,5 +69,7 @@
     <script src="../scripts/app.js "></script>
     <script src="../scripts/script.js "></script>
 </body>
+
+</html>
 
 </html>
