@@ -6,33 +6,26 @@
 
 header {
     width: 100%;
-    height: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 body {
     width: 100%;
-    height: 100%;
     background-color: #030A1A;
 }
 
 .nav-wrapper {
-    width: 40%;
-}
-
-nav {
-    color: white;
-    width: 100%;
-    height: 100%;
+    width: 45%;
+    padding-top: 10px;
+    text-align: center;
 }
 
 nav ul {
     width: 90%;
-    height: 100%;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -49,13 +42,16 @@ nav ul li button {
     color: #FAF4F4;
     background: #133359;
     width: 80px;
-    padding: 5px;
     border: 3px solid #145AC3;
     border-radius: 20px 20px;
 }
 
 nav ul li button:hover {
     cursor: pointer;
+}
+
+nav ul li a:active {
+    text-decoration: underline;
 }
 
 .log-wrapper {
@@ -68,53 +64,67 @@ main {
     width: 100%;
     height: 500px;
     margin-top: 1em;
+    ;
+}
+
+.main-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .main-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .form-wrapper {
-    padding: 10px;
-    width: 50%;
-    height: 400px;
+    width: 90%;
+    height: 380px;
     color: white;
-    margin-left: 3em;
+    margin-top: 3em;
+    text-align: center;
 }
 
-.form-wrapper form {
-    width: 85%;
-    height: 250px;
+.login-form {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.login-field {
+    width: 30%;
+    height: 200px;
+    margin: auto;
+    padding: 50px;
     display: grid;
     grid-template-columns: auto auto;
-    padding-top: 70px;
-    margin-top: 3em;
     border: 3px solid #145AC3;
     border-radius: 10px 10px;
     background: #133359;
 }
 
 .label-wrapper {
-    width: 90%;
-    padding-top: 20px;
-    font-size: 20px;
-    margin-left: 2em;
+    width: 100%;
+    margin-top: 1em;
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: initial;
 }
 
 .input-wrapper {
-    width: 90%;
-    position: relative;
-    margin-right: 15em;
-    padding-top: 20px;
+    width: 100%;
+    margin-top: 1em;
+    padding-top: 10px;
 }
 
 .input-wrapper input,
 textarea {
     padding: 10px;
-    width: 90%;
+    width: 100%;
     height: 28px;
     border: 3px solid #145AC3;
     border-radius: 10px 10px;
@@ -127,18 +137,16 @@ textarea::placeholder {
 }
 
 .button-wrapper {
-    padding-top: 10px;
-    height: 30px;
+    width: 100%;
 }
 
 .button-wrapper button {
-    width: 30%;
+    width: 15%;
     font-size: 20px;
     cursor: pointer;
     color: white;
     padding: 5px;
     margin-top: 1em;
-    margin-left: 9em;
     background: #133359;
     border: 3px solid #145AC3;
     border-radius: 10px 10px;
@@ -150,12 +158,12 @@ textarea::placeholder {
 }
 
 footer {
-    width: 94%;
+    width: 100%;
     height: 25px;
     color: #FAF4F4;
     margin-top: 1.5em;
     padding-top: 20px;
-    padding-left: 80px;
+    text-align: center;
     background: rgb(4, 13, 33);
     background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
 }
@@ -166,21 +174,6 @@ footer {
 
 .mobile-sidebar {
     display: none;
-}
-
-.input-wrapper .fa {
-    background-color: hotpink;
-    position: absolute;
-    top: 50%;
-    right: 8%;
-}
-
-.fa-times {
-    color: red;
-}
-
-.fa-check {
-    color: green;
 }
 
 #errorMessage {

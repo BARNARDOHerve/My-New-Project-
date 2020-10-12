@@ -68,23 +68,27 @@
     main {
         width: 97%;
         padding: 16px;
-        height: 490px;
-        display: flex;
-        justify-content: space-around;
+        height: auto;
+        /* display: flex;
+        justify-content: space-around; */
     }
     
     .blog-post-container {
         width: 95%;
-        height: 490px;
-        display: flex;
-        justify-content: space-between;
+        height: auto;
+        /* display: flex;
+        justify-content: space-between; */
         background: #133359;
         border: 3px solid #145AC3;
         border-radius: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
     
     .first-blog-post {
-        width: 45%;
+        /* width: 4%; */
+        /* padding: 10px; */
+        /* margin-left: 2em; */
         padding: 20px;
         color: #FAF4F4;
     }
@@ -126,10 +130,11 @@
         width: 100%;
         height: 300px;
         color: #FAF4F4;
+        padding: 20px;
     }
     
     .blog-item-one img {
-        width: 100%;
+        width: 80%;
         height: 250px;
     }
     
@@ -186,6 +191,7 @@
     }
     
     footer {
+        position: relative;
         width: 100%;
         height: 25px;
         color: #FAF4F4;

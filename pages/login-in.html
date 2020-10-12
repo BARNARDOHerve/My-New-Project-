@@ -60,26 +60,26 @@
         <div class="main-container">
             <div class="form-wrapper">
                 <p id="errorMessage"></p>
-                <form action="" onsubmit="event.preventDefault()">
-                    <div class=" label-wrapper">
-                        <label for=" ">E-mail:</label>
-                    </div>
-                    <div class="input-wrapper">
-                        <input type="text" placeholder="words@example.com" id="email">
+                <form action="" onsubmit="event.preventDefault()" class="login-form">
+                    <div class="login-field">
+                        <div class=" label-wrapper">
+                            <label for=" ">E-mail:</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="words@example.com" id="email">
 
+                        </div>
+                        <div class=" label-wrapper ">
+                            <label for=" ">Password:</label>
+                        </div>
+                        <div class="input-wrapper ">
+                            <input type="password" placeholder="Your Password" id="password">
+                        </div>
                     </div>
-                    <div class=" label-wrapper ">
-                        <label for=" ">Password:</label>
-                    </div>
-                    <div class="input-wrapper ">
-                        <input type="password" placeholder="Your Password" id="password">
-
+                    <div class="button-wrapper">
+                        <button onclick="userLogin()">Login</button>
                     </div>
                 </form>
-                <div class="button-wrapper">
-                    <button onclick="userLogin()">Login</button>
-                </div>
-
             </div>
         </div>
     </main>

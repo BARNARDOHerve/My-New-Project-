@@ -8,7 +8,7 @@
     <title>Barnardo Herve</title>
     <link rel="stylesheet" href="../pages-design/contact.css">
 
-    <link rel="stylesheet" href="./font-awesome/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="./font-awesome/font-awesome/css/font-awesome.min.css"> -->
 </head>
 
 <body>
@@ -46,29 +46,30 @@
         <div class="main-container">
             <div class="primary-container">
                 <div class="form-wrapper">
-                    <form action="">
+                    <p id="errorMessage"></p>
+                    <form id="formWrap">
                         <div class="label-wrapper">
                             <label for="">Name</label>
                         </div>
                         <div class="input-wrapper">
-                            <input type="text" placeholder="Your name">
+                            <input type="text" placeholder="Your name" id="nameWrapper">
                         </div>
-                        <div class="label-wrapper">
-                            <label for="">Email</label>
+                        <div class=" label-wrapper ">
+                            <label for=" ">Email</label>
                         </div>
-                        <div class="input-wrapper">
-                            <input type="email" placeholder="Your Email">
+                        <div class="input-wrapper ">
+                            <input type="text" placeholder="word@example.com" id="emailWrapper">
                         </div>
-                        <div class="label-wrapper">
-                            <label for="">Comment</label>
+                        <div class="label-wrapper ">
+                            <label for=" ">Comment</label>
                         </div>
-                        <div class="input-wrapper">
-                            <textarea name="" id="" cols="30" rows="8"></textarea>
+                        <div class="input-wrapper ">
+                            <textarea name=" " id="commentWrapper" cols="30" rows="8"></textarea>
                         </div>
-                        <button>Submit</button>
+                        <button type="submit" id="buttonWrap">Submit</button>
                     </form>
                 </div>
-                <div class="secondary-container">
+                <div class="secondary-container ">
                     <h3>For more information contact me</h3>
                     <address> 
                 TEL: (+250780114841) <br>
@@ -79,12 +80,18 @@
                 </address>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
     <footer>
         <p> Copyright BARNARDO Ntaganira Herve 2020</p>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js "></script>
 
+    <script src="../scripts/firebase.js "></script>
+    <script src="../scripts/app.js "></script>
+    <!-- <script src="../scripts/script.js "></script> -->
 </body>
 
 </html>
