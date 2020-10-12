@@ -41,7 +41,7 @@
         </div>
     </header>
     <main>
-        <form action="" class="form-container">
+       <form action="" class="form-container" id="blogForm" onsubmit="event.preventDefault()">
             <label for="">Title</label><br>
             <input type="text" id="title">
             <br></br>
@@ -51,9 +51,9 @@
             <br></br>
 
             <label for="">image</label>
-            <input type="file" id="image" onchange="getBlogImage()">
+            <input type="file" id="image" onchange="getBlogImage(event)">
             <br></br>
-            <button>create blog</button>
+            <button onclick="createBog()">create blog</button>
         </form>
     </main>
     <footer>
@@ -65,8 +65,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js "></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-storage.js "></script>
 
-    <script src="../scripts/firebase.js "></script>
-    <script src="../scripts/app.js "></script>
+    <script src="../scripts/firebase.js"></script>
+    <script src="../scripts/blog.js"></script>
     <script src="../scripts/script.js "></script>
 </body>
 
