@@ -1,3 +1,5 @@
+
+
 function newUser() {
     let Fname = document.getElementById("Fname").value;
     let fname = document.getElementById("fname").value;
@@ -136,19 +138,4 @@ button.onclick = (event) => {
     event.preventDefault();
     myCommentForm(name.value, email.value, comment.value);
 }
-let blogImage;
 
-function getBlogImage(event) {
-    if (event.targets.files[0]);
-    blogImage = event.targets.files[0];
-}
-
-function createBog() {
-    let user = auth.currentUser();
-    if ()
-        let newTitle = document.getElementById("title").value;
-    let newBody = document.getElementById("paragraph").value;
-    // let newimage = document.getElementById("image").value;
-
-
-}
