@@ -28,10 +28,17 @@ function newUser() {
     }
 
 
-    firebase.auth().createUserWithEmailAndPassword(email, password).then((user) => {
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(() => {
             // alert("I cont");
-            window.location.href = "../pages/login-in.html"
-
+            let user = firebase.auth().currentUser;
+            user.updateProfile({
+              displayName: Fname+" "+fname
+            }).then(function() {
+                // Update successful.
+                window.location.href = "../pages/login-in.html"
+            }).catch(function(error) {
+                alert(error)
+            });
         })
         .catch((error) => {
             alert(error);

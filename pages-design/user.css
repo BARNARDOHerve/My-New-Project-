@@ -96,6 +96,15 @@ main {
     padding-bottom: 20px;
 }
 
+.secondary-item ul li:hover {
+    cursor: pointer;
+    background-color:#145AC3;
+}
+.secondary-item ul a li { 
+    color: #FAF4F4;
+    text-decoration: none;
+}
+
 .logout-wrapper button {
     width: 100%;
 }
