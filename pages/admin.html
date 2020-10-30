@@ -23,7 +23,7 @@
                         <img src="../assets/account profile admin nav bar.png" alt="admin account profile">
                     </li>
                     <li>
-                        <button>Bardo Herve</button>
+                        <button onclick="loginUser()">logout</button>
                     </li>
                 </ul>
             </nav>
@@ -32,49 +32,48 @@
     <main>
         <div class="main-container-wapper">
             <div class="side-bar">
-                <div class="primary-item item-size">Admin Account
-                </div>
-                <div class="secondary-item item-size">
-                    <ul>
-                        <li>Dashboard</li>
-                        <li>Profile</li>
-                        <li>All users</li>
-                        <li>Direct Blog</li>
-                        <li>Notifications</li>
-                        <li>Settings</li>
-                    </ul>
-                </div>
-                <div class="logout-wrapper ">
-                    <button class="item-size" onclick="loginUser()">Logout</button>
-                </div>
-                <!-- <div class="logout-wrapper item-size">
-                    <button><a href="../pages/login-in.html">Logout</a></button>
-                </div> -->
+                    <div class="adminAccount">
+                         <a href=""><h3>Admin Account</h3></a>
+                    </div>
+                    <div class="item-size" id="A-dashboard">
+                        <a href=""><h3>Dashboard</h3></a> 
+                    </div>
+                    <div class="item-size" id="A-profile">
+                        <a href=""><h3>Profile</h3></a> 
+                    </div>
+                    <div class="item-size" id="A-selectUsers">
+                        <a href=""><h3>All users</h3></a> 
+                    </div>
+                    <div class="item-size" id="A-selectBlogs">
+                        <a href=""><h3>All Blogs</h3></a> 
+                    </div>
+                    <div class="item-size" id="A-notifications">
+                        <a href=""><h3>Notifications</h3></a> 
+                    </div>
+                    <div class="item-size" id="A-settings"> 
+                        <a href=""><h3>settings</h3></a> 
+                    </div>
+                    <div class="item-size" id="A-queries">
+                         <a href=""><h3>queries</h3></a>
+                    </div>
             </div>
-            <div class="admin-accout-settings">
-                <div class="admin-profile">
-                    <img src="../assets/account profile admin main.png" alt="profile picture">
-                    <button>Bardo Herve </button>
+            <div class="adminDashboard">
+                <div class="setting-wrapper">
+                    <h4>Profile</h4>
+                    <button>Edit profile</button>
                 </div>
-                <div class="admin-settings">
-                    <div class="users-item setting-wrapper">
-                        <h4>Users</h4>
-                        <button>Check</button>
-                    </div>
-                    <div class="blogs-item setting-wrapper">
-                        <h4>Profiles</h4>
-                        <button>Edit</button>
-                    </div>
-                    <div class="notification-item setting-wrapper">
-                        <h4>Notifications</h4>
-                        <button>Up-date</button>
-                    </div>
-                    <div class="settings-item setting-wrapper">
-                        <h4>Blogs</h4>
-                        <button>up-date</button>
-                    </div>
+                <div class="setting-wrapper">
+                    <h4>Blogs</h4>
+                    <a href="./create-blog.html"><button>create blog</button></a>
                 </div>
-
+                <div class="setting-wrapper">
+                    <h4>Notifications</h4>
+                    <button>New</button>
+                </div>
+                <div class="setting-wrapper">
+                    <h4>Settings</h4>
+                    <button>up-date</button>
+                </div>
             </div>
         </div>
     </main>

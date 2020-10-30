@@ -15,18 +15,20 @@ firebase.auth().onAuthStateChanged(function(user) {
       window.location.href="../index.html"
     }
   });
-function createBog(username) {
-         alert("IN>>>>>>>><<<<<<<")
+function createBlog() {
+        //  alert(username)
         let newTitle = document.getElementById("title").value;
         let newBody = document.getElementById("paragraph").value;
         let blogid  = blogId();
         let blogForm = document.getElementById('blogForm');
-        // storage.ref(`blogs/${blogid}/blogImage.jpg`).put(blogImage).then(()=>{
+        let user = firebase.auth().currentUser;
+        storage.ref(`blogs/${blogid}/blogImage.jpg`).put(blogImage).then(()=>{
            db.collection('blogs').doc(blogid).set({
                 title: newTitle,
                 body: newBody,
                 date: date+"  "+time,
-                author:username
+                author:user.displayName,
+                imageURL:`blogs/${blogid}/blogImage.jpg`
     
             }).then(()=>{
                blogForm.reset();
@@ -35,11 +37,11 @@ function createBog(username) {
                 alert("Error2")
                 console.log(error)
             })
-        // }).catch((error) => {
-        //     console.log(error)
-        //     alert(JSON.stringify(error));
-        // })
-        // alert(blogImage)
+        }).catch((error) => {
+            console.log(error)
+            alert(JSON.stringify(error));
+        })
+        alert(blogImage)
   
 }
 

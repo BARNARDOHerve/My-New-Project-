@@ -25,7 +25,7 @@ function userLogin() {
 
 function loginUser() {
     firebase.auth().signOut().then((user) => {
-        window.location.href = "../pages/user.html"
+        window.location.href = "../pages/login-in.html"
 
     }).catch((error) => {
 

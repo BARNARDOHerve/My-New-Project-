@@ -19,23 +19,11 @@
             <nav>
 
                 <ul>
-                    <!-- <li>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="../pages/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="../pages/blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="../pages/contact.html">Contact</a>
-                    </li> -->
                     <li>
                         <img src="../assets/account profile litter one.png" alt="user account profile">
                     </li>
                     <li>
-                        <button>User name</button>
+                        <button onclick="loginUser()">logout</button>
                     </li>
                 </ul>
             </nav>
@@ -44,62 +32,58 @@
     <main>
         <div class="main-container-wapper">
             <div class="side-bar">
-                <div class="primary-item item-size">User Account
+                <div class="userAccount">
+                     <a href=""><h3 id="userName">User Account</h3></a>
                 </div>
-                <div class="secondary-item item-size">
-                    <ul>
-                        <li>Dashboard</li>
-                        <li>Profile</li>
-                        <a href="./create-blog.html"><li>Blog</li></a>
-                        <li>Notifications</li>
-                        <li>Settings</li>
-                    </ul>
+                <div class="item-size" id="U-dashboard">
+                    <a href=""><h3>Dashboard</h3></a> 
                 </div>
-                <div class="logout-wrapper ">
-                    <button class="item-size" onclick="signoutUser()">Logout</button>
+                <div class="item-size" id="U-profile">
+                    <a href=""><h3>Profile</h3></a> 
+                </div>
+                <div class="item-size" id="U-blog">
+                     <a href="./blog.html"><h3>Blog</h3></a>
+                </div>
+                <div class="item-size" id="U-notifications">
+                     <a href=""><h3>Notifications</h3></a>
+                </div>
+                <div class="item-size" id="U-settings">
+                     <a href=""><h3>settings</h3></a>
+                </div>
+            </div> 
+            <div class="userDashboard">
+                <div class="setting-wrapper">
+                    <h4>Profile</h4>
+                    <button>Edit profile</button>
+                </div>
+                <div class="setting-wrapper">
+                    <h4>Blogs</h4>
+                    <a href="./create-blog.html"><button>create blog</button></a>
+                </div>
+                <div class="setting-wrapper">
+                    <h4>Notifications</h4>
+                    <button>New</button>
+                </div>
+                <div class="setting-wrapper">
+                    <h4>Settings</h4>
+                    <button>up-date</button>
                 </div>
             </div>
-            <div class="user-accout-settings">
-                <div class="User-profile">
-                    <img src="../assets/account profile nav bar.png" alt="profile picture">
-                    <button>User name</button>
-                </div>
-                <div class="user-settings">
-                    <div class="profile-item setting-wrapper">
-                        <h4>Profile</h4>
-                        <button>Edit profile</button>
-                    </div>
-                    <div class="blogs-item setting-wrapper">
-                        <h4>Blogs</h4>
-                        <button href="./create-blog.html">create blog</button>
-                    </div>
-                    <div class="notification-item setting-wrapper ">
-                        <h4>Notifications</h4>
-                        <button>New</button>
-                    </div>
-                    <div class="settings-item setting-wrapper ">
-                        <h4>Settings</h4>
-                        <button>up-date</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        </div>  
     </main>
     <footer>
         <p> Copyright BARNARDO Ntaganira Herve 2020</p>
     </footer>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js "></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js "></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js "></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
     <script src="../scripts/firebase.js "></script>
-    <script src="../scripts/app.js "></script>
-    <!-- <script src="../scripts/script.js "></script> -->
+    <script src="../scripts/signup.js "></script>
+    <script src="../scripts/login.js "></script>
+    <script src="../scripts/user.js"></script>
+
 </body>
 
 </html>

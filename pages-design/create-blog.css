@@ -63,11 +63,11 @@
     main {
         width: 100%;
         height: 500px;
-        margin-top: 1em;
+        margin-top: 5em;
     }
     
     .form-container {
-        width: 20%;
+        width: 50%;
         margin: auto;
         padding: 50px;
         color: #FAF4F4;
@@ -75,21 +75,27 @@
         border: 3px solid #145AC3;
         border-radius: 20px 20px;
     }
-    
-    button {
-        width: 40%;
-        padding: auto;
+    #title {
+        width: 60%;
+    }
+    textarea {
+        width: 98%;
+        height: auto;
+    }
+    #createBlog {
+        width: 15%;
         color: #FAF4F4;
         background: #133359;
         border: 3px solid #145AC3;
         border-radius: 20px 20px;
+
     }
     
     footer {
         width: 100%;
         height: 25px;
         color: #FAF4F4;
-        margin-top: 1.5em;
+        margin-top: 2.5em;
         padding-top: 20px;
         text-align: center;
         background: rgb(4, 13, 33);
