@@ -58,92 +58,105 @@ nav ul li button {
 }
 
 main {
-    width: 90%;
-    padding: 20px;
+    width: 93%;
+    height: 550px;
+    padding: 50px;
+
 }
 
 .main-container-wapper {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+   
 }
 
 .side-bar {
-    width: 30%;
+    width: 25%;
+    height: 500px;
+
+    
+}
+
+.adminAccount{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #FAF4F4;
+}
+
+.adminAccount h3 {
+    width: 70%;
+    height: 45px;
+    padding: 10px;
+    margin: 1em;
+    align-items: center;
+    background: #0543ec;
+    border: 3px solid #8db1e6;
+    border-radius: 10px 10px;
 }
 
 .item-size {
-    font-size: 25px;
-    width: 98%;
+    width: 100%;
+    height: 50px;
     text-align: center;
     color: #FAF4F4;
+}
+
+
+
+.item-size h3 {
+    width: 70%;
+    height: 45px;
+    padding: 10px;
+    margin: 1em;
+    align-items: center;
     background: #133359;
     border: 3px solid #145AC3;
     border-radius: 10px 10px;
 }
 
-.secondary-item ul li {
-    list-style-type: none;
-    padding-top: 22px;
-    padding-bottom: 20px;
-}
-
-.logout-wrapper button {
-    width: 100%;
-}
-
-.logout-wrapper button a {
+.item-size a h3 {
     color: #FAF4F4;
     text-decoration: none;
 }
 
-.admin-accout-settings {
-    width: 80%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.item-size h3:hover {
+    cursor: pointer;
+    background-color: #175d9e;
 }
 
-.admin-profile {
-    width: 20%;
-    text-align: center;
+#A-dashboard h3 {
+    background: none;
+    background-color:#072222;
 }
 
-.admin-profile img {
-    width: 60%;
-}
-
-.admin-profile button {
-    width: 95%;
-    color: #FAF4F4;
-    background: #133359;
-    border: 2px solid #145AC3;
-    border-radius: 5px 5px;
-}
-
-.admin-settings {
-    width: 60%;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    align-items: center;
+.adminDashboard {
+    width: 70%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+    margin-top: 4em;
 }
 
 .setting-wrapper {
-    width: 90%;
-    height: 115px;
-    padding-top: 10px;
-    margin-top: 20px;
+    width: 85%;
+    height: 130px;
+    padding: 15px;
     color: #FAF4F4;
     background: #0E4272;
-    border: 3px solid #3E68FD;
+    border: 3px solid   #145AC3;
     border-radius: 10px 10px;
 }
-
+.setting-wrapper h4 {
+    text-align: center;
+}
+.setting-wrapper a button {
+    color: #FAF4F4;
+    text-decoration: none;
+}
 .setting-wrapper button {
-    width: 40%;
+    width: 30%;
     color: #FAF4F4;
     background: #0E4272;
     border: 3px solid #3E68FD;
