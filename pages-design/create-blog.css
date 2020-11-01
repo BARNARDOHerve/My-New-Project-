@@ -68,6 +68,7 @@
     
     .form-container {
         width: 50%;
+        height: 450px;
         margin: auto;
         padding: 50px;
         color: #FAF4F4;
@@ -80,10 +81,11 @@
     }
     textarea {
         width: 98%;
-        height: auto;
+        height: 300px;
     }
     #createBlog {
         width: 15%;
+        padding: 5px;
         color: #FAF4F4;
         background: #133359;
         border: 3px solid #145AC3;
@@ -95,7 +97,7 @@
         width: 100%;
         height: 25px;
         color: #FAF4F4;
-        margin-top: 2.5em;
+        margin-top: 7.5em;
         padding-top: 20px;
         text-align: center;
         background: rgb(4, 13, 33);
