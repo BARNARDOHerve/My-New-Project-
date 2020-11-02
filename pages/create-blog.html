@@ -18,31 +18,20 @@
         </div>
         <div class="nav-wrapper">
             <nav>
+
                 <ul>
                     <li>
-                        <a href="../index.html">Home</a>
+                        <img id="userProfile" src="../assets/userProfile.png" alt="user account profile" width="40" height="40">
                     </li>
                     <li>
-                        <a href="../pages/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="../pages/blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="../pages/contact.html ">Contact</a>
-                    </li>
-                    <li>
-                        <button><a href="../pages/login-in.html">Log in</a></button>
-                    </li>
-                    <li>
-                        <button><a href="../pages/sign-up.html">Sign up</a></button>
+                        <button onclick="loginUser()">logout</button>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-       <form action="" class="form-container" id="blogForm" onsubmit="event.preventDefault()">
+        <form action="" class="form-container" id="blogForm" onsubmit="event.preventDefault()">
             <label for="">Title</label><br>
             <input type="text" id="title">
             <br></br>
@@ -54,7 +43,7 @@
             <label for="">image</label>
             <input type="file" id="image" onchange="getBlogImage(event)">
             <br></br>
-            <button id="createBlog" onclick="createBog()">create blog</button>
+            <button onclick="createBlog()">create blog</button>
         </form>
     </main>
     <footer>
@@ -68,9 +57,9 @@
 
     <script src="../scripts/firebase.js"></script>
     <script src="../scripts/blog.js"></script>
+    <script src="../scripts/signup.js"></script>
+    <script src="../scripts/login.js"></script>
     <script src="../scripts/script.js "></script>
 </body>
-
-</html>
 
 </html>
