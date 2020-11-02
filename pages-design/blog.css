@@ -42,7 +42,9 @@
         color: #FAF4F4;
         text-decoration: none;
     }
-    
+    #blog a {
+        color: tomato;
+    }
     nav ul li button {
         width: 80px;
         color: #FAF4F4;

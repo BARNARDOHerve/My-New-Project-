@@ -37,7 +37,9 @@
         color: #FAF4F4;
         text-decoration: none;
     }
-    
+    #contact a {
+        color: tomato;
+    }
     nav ul li button {
         color: #FAF4F4;
         background: #133359;
