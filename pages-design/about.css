@@ -43,7 +43,11 @@
         text-decoration: none;
     }
     
-    nav ul li button {
+    #about a {
+        color: tomato;
+    }
+    
+    nav ul li a button {
         color: #FAF4F4;
         background: #133359;
         width: 80px;
@@ -51,13 +55,13 @@
         border-radius: 20px 20px;
     }
     
-    nav ul li button:hover {
+    nav ul li a button:hover {
         cursor: pointer;
     }
-    
-    nav ul li a:active {
+/*     
+    nav ul li a button:active {
         text-decoration: underline;
-    }
+    } */
     
     .log-wrapper {
         width: 50%;
