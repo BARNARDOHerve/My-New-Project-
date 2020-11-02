@@ -3,6 +3,7 @@ let email = document.getElementById("emailWrapper");
 let comment = document.getElementById("commentWrapper");
 let errorMessage = document.getElementById("errorMessage");
 
+// queries validations
 
 function myCommentForm(name, email, comment, form) {
     let atposition = email.indexOf("@");
@@ -29,6 +30,7 @@ function myCommentForm(name, email, comment, form) {
         submitData(name, email, comment, form);
     }
 }
+// creating a query 
 
 async function submitData(name, email, comment, form) {
     await db.collection("user-comment").add({
