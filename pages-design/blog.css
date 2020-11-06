@@ -68,30 +68,34 @@
     }
     
     main {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding: 50px;
     }
     
     .blog-post-container {
-        width: 95%;
+        width: 90%;
+        height: auto;
+        padding: 50px;
         display: grid;
         grid-template-columns: auto auto auto;
         grid-gap: 50px;
+        background: #133359;
+        border: 3px solid #145AC3;
+        border-radius: 10px 10px;
     }
     
     .blog-item-one {
-        width: 90%;
+        width: 80%;
         height: auto;
         padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        background: #133359;
+        background: #0d55ad8c;
         border: 3px solid #145AC3;
         border-radius: 10px 10px;
     }
