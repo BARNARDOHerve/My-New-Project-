@@ -63,8 +63,7 @@ nav ul li a:active {
 main {
     width: 100%;
     height: 500px;
-    margin-top: 1em;
-    ;
+    margin-top: 4em;
 }
 
 .main-container {
@@ -161,7 +160,7 @@ footer {
     width: 100%;
     height: 25px;
     color: #FAF4F4;
-    margin-top: 1.5em;
+    margin-top: 8.5em;
     padding-top: 20px;
     text-align: center;
     background: rgb(4, 13, 33);

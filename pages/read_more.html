@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/icon.png" type="image/png" sizes="180x180">
     <title>Barnardo Herve</title>
-    <link rel="stylesheet" href="../pages-design/blog.css">
+    <!-- <link rel="stylesheet" href="../pages-design/blog.css"> -->
+    <link rel="stylesheet" href="../pages-design/read_more.css">
     <link rel="stylesheet" href="./font-awesome/font-awesome/css/font-awesome.min.css">
 </head>
 
@@ -43,28 +44,12 @@
         </div>
     </header>
     <main>
-        <div class="blog-post-container" id="blogContainer">
-            <!-- <div class="blog-item-one">
-                <h4>Agile Methodology</h4>
-                <img src="../assets/team 2.png" alt="agile team">
-                <button>Read-more</button>
-            </div>
-            <div class="blog-item-one">
-                <h4>Pogramming Language</h4>
-                <img src="../assets/bhanu 1.png" alt="codes background">
-                <button>Read-more</button>
-            </div>
-            <div class="blog-item-one">
-                <h4>Pogramming Language</h4>
-                <img src="../assets/bhanu 1.png" alt="codes background">
-                <button>Read-more</button>
-            </div>
-            <div class="blog-item-one">
-                <h4>Pogramming Language</h4>
-                <img src="../assets/bhanu 1.png" alt="codes background">
-                <button>Read-more</button>
-            </div> -->
-        </div>
+       <div class="container-fluid">
+           <h4 id="titleWrapper"></h4>
+           <img src="" alt="blog image" id="imageWrapper">
+           <small class="author"><br> By <span id="authorWrapper"></span><br> <br> Published at: <span id="dateWrapper"></span></small>
+           <p id="contentWrapper"></p>
+       </div>
     </main>
     <footer>
         <p> Copyright BARNARDO Ntaganira Herve 2020</p>
@@ -75,7 +60,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-storage.js "></script>
 
     <script src="../scripts/firebase.js "></script>
-    <script src="../scripts/read_blogs.js "></script>
+    <script src="../scripts/read_more.js"></script>
     <script src="../scripts/script.js "></script>
 </body>
 
