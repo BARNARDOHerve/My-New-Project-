@@ -1,7 +1,8 @@
 function newUser() {
     let Fname = document.getElementById("Fname").value;
-    let fname = document.getElementById("fname").value;
+    let lname = document.getElementById("lname").value;
     let email = document.getElementById("email").value;
+    let role = "StandardUser";
     let password = document.getElementById("password").value;
     let checkpsw = document.getElementById("check").value;
     let errorMessage = document.getElementById("errorMessage");
@@ -11,7 +12,7 @@ function newUser() {
     // alert(Fname + fname + email + password + checkpsw);
     if (Fname == "") {
         return errorMessage.innerHTML = "Firstname is required";
-    } else if (fname == "") {
+    } else if (lname == "") {
         return errorMessage.innerHTML = "Lastname is required"
     } else if (email == "") {
         return errorMessage.innerHTML = "email is required"
@@ -26,25 +27,21 @@ function newUser() {
     } else if (checkpsw != password) {
         return errorMessage.innerHTML = "confirm password doesn't match with the password"
     }
-
-
-    firebase.auth().createUserWithEmailAndPassword(email, password).then(() => {
-            // alert("I cont");
-            let user = firebase.auth().currentUser;
-            user.updateProfile({
-              displayName: Fname+" "+fname
-            }).then(function() {
-                // Update successful.
-                window.location.href = "../pages/login-in.html"
-            }).catch(function(error) {
-                alert(error)
-            });
-        })
-        .catch((error) => {
+    else{
+        auth.createUserWithEmailAndPassword(email, password).then(resultData => {
+            console.log(resultData);
+            return db.collection('Users').doc(resultData.user.uid).set({
+                Fname,lname,email,role
+            })
+        }).then(() => {
+            alert('user signed up successfull');
+            window.location.href = "../pages/login-in.html"
+        }).catch((error) => {
             alert(error);
-
         });
+    }
 }
+
 
 function signoutUser() {
     firebase.auth().signOut().then((user) => {
@@ -54,3 +51,4 @@ function signoutUser() {
 
     });
 }
+

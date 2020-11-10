@@ -23,7 +23,7 @@
                         <img src="../assets/account profile admin nav bar.png" alt="admin account profile">
                     </li>
                     <li>
-                        <button onclick="loginUser()">logout</button>
+                        <button onclick="signoutUser()">logout</button>
                     </li>
                 </ul>
             </nav>
@@ -80,6 +80,21 @@
     <footer>
         <p> Copyright BARNARDO Ntaganira Herve 2020</p>
     </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js "></script>
+
+    <script src="../scripts/firebase.js "></script>
+    <script src="../scripts/signup.js "></script>
+    <script src="../scripts/login.js "></script>
+    <script src="../scripts/user.js"></script>
+    <script>
+        const userName = sessionStorage.getItem("username", firstname);
+        document.getElementsByClassName('adminAccount').innerHTML = userName;
+    </script>
+
 </body>
 
 </html>

@@ -11,13 +11,10 @@ async function getBlogs(){
                     <h4>${doc.data().title}</h4>
                     <img src="${imageURL}">
                     <button onclick = "setBlogId('${doc.id}')">Read-more</button>
-                </div>
-            `
+                </div>`
             }).catch(e => {
                 console.log("Download error "+e);
             })
-          
-           
           });
       })
     .catch(function(error) {
