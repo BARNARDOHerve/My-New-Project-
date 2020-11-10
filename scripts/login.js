@@ -14,21 +14,49 @@ function userLogin() {
     } else if (password.length < 6) {
         return errorMessage.innerHTML = "incomplite password"
     }
-
-    firebase.auth().signInWithEmailAndPassword(email, password).then((user) => {
-            window.location.href = "../pages/user.html"
+    else {
+        auth.signInWithEmailAndPassword(email, password)
+        .then(resultData=>{
+            // console.log(resultData);
+            const uid = resultData.user.uid; 
+            // signInForm.reset();
+            db.collection("Users").doc(uid).get().then( function(snapshot){
+                let childData = snapshot.data();
+                console.log(childData);
+                let firstname = childData.fname;
+                let lastname = childData.lname;
+                let email = childData.email;
+                let role = childData.role;
+                if(role === 'StandardUser'){
+                    sessionStorage.setItem("userUID", uid);
+                    sessionStorage.setItem("username", firstname);
+                    sessionStorage.setItem("userLname", lastname);      
+                    window.location.href = "../pages/user.html";
+                }
+                else if(role === 'Admin'){
+                    sessionStorage.setItem("userUID", uid);
+                    console.log(uid);
+                    sessionStorage.setItem("userFname", firstname);  
+                    sessionStorage.setItem("userLname", lastname); 
+                    sessionStorage.setItem("userEmail", email); 
+                    window.location.href="../pages/admin.html";
+                }
+                });
         })
-        .catch((error) => {
-            alert("invalid inputs")
+        .catch(error=>{
+            message.style.display="block";
+            message.innerHTML=error.message;
         });
+    }
 }
+localStorage.setItem('userId', id);
 
-function loginUser() {
+function signoutUser() {
     firebase.auth().signOut().then((user) => {
-        window.location.href = "../pages/login-in.html"
+        window.location.href = "../pages/login-in.html";
 
     }).catch((error) => {
-
+        alert('failed to logout')
     });
-
 }
+
