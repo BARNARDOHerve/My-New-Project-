@@ -9,7 +9,9 @@
         display: flex;
         justify-content: space-between;
     }
-    
+    :focus{
+        outline: none;
+    }
     body {
         width: 100%;
         background-color: #030A1A;

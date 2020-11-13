@@ -27,7 +27,9 @@ nav ul {
     display: flex;
     justify-content: space-around;
 }
-
+:focus{
+    outline: none;
+}
 nav ul li {
     cursor: pointer;
     list-style-type: none;

@@ -59,7 +59,7 @@ nav ul li button {
 
 main {
     width: 93%;
-    height: 550px;
+    height: auto;
     padding: 50px;
 
 }
@@ -74,8 +74,6 @@ main {
 .side-bar {
     width: 25%;
     height: 500px;
-
-    
 }
 
 .adminAccount{
@@ -130,54 +128,78 @@ main {
 #A-selectBlogs h3 {
     border:  3px solid #c56b21;
 }
-.blog-post-container {
-    width: 60%;
-    height: auto;
-    margin-top: 3em;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 50px;
-    background: #133359;
-    border: 3px solid #145AC3;
-    border-radius: 10px 10px;
-}
-.blog-item-one {
+
+.adminDashboard {
     width: 80%;
-    height: auto;
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-top: 3em;
     padding: 20px;
+}
+.setting-wrapper {
+    width: 95%;
+    height: auto;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: #0d55ad8c;
-    border: 3px solid #145AC3;
+    color: #FAF4F4;
+    background: #0E4272;
+    border: 3px solid   #145AC3;
     border-radius: 10px 10px;
 }
-.blog-item-one h4 {
-    color: #FAF4F4;
-}
-.blog-item-one img {
-    width: 100%;
-    margin-top: 2em;
-    height: 250px;
-}
-.blog-item-one button {
-    width: 40%;
-    margin-top: 2em;
-    color: #FAF4F4;
-    background: #133359;
-    border: 3px solid #145AC3;
-    border-radius: 20px 20px;
+:focus{
+    outline: none;
 }
 
+.ttl{
+    margin-top: 1em;
+    font-size: 20px;
+    font-weight: bolder;
+}
+table{
+    table-layout: fixed;
+    width: 80%;
+    margin: 6%;
+}
+td{
+    word-wrap:break-word
+}
+table, th, td {
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 3px 1px;
+    text-align: left;
+  }
+th{
+    border-bottom: 4px solid black;
+    width: 100%;
+}
+tr{
+    border-bottom: 1px solid black;
+}
+.delete{
+    width: 90%;
+    display: block;
+    color: #FAF4F4;
+    background: #0E4272;
+    border: 3px solid   #145AC3;
+    border-radius: 10px 10px;
+}
+#blog{
+    overflow: hidden;
+}
 footer {
     width: 100%;
     height: 25px;
+    text-align: center;
     color: #FAF4F4;
     margin-top: 4.8em;
     padding-top: 20px;
-    text-align: center;
     background: rgb(4, 13, 33);
     background: linear-gradient(180deg, rgba(4, 13, 33, 1) 83%, rgba(62, 104, 253, 1) 100%);
 }

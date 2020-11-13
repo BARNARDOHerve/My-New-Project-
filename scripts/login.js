@@ -17,9 +17,7 @@ function userLogin() {
     else {
         auth.signInWithEmailAndPassword(email, password)
         .then(resultData=>{
-            // console.log(resultData);
             const uid = resultData.user.uid; 
-            // signInForm.reset();
             db.collection("Users").doc(uid).get().then( function(snapshot){
                 let childData = snapshot.data();
                 console.log(childData);
@@ -27,6 +25,7 @@ function userLogin() {
                 let lastname = childData.lname;
                 let email = childData.email;
                 let role = childData.role;
+                
                 if(role === 'StandardUser'){
                     sessionStorage.setItem("userUID", uid);
                     sessionStorage.setItem("username", firstname);
@@ -41,7 +40,7 @@ function userLogin() {
                     sessionStorage.setItem("userEmail", email); 
                     window.location.href="../pages/admin.html";
                 }
-                });
+            });
         })
         .catch(error=>{
             message.style.display="block";
@@ -49,7 +48,7 @@ function userLogin() {
         });
     }
 }
-localStorage.setItem('userId', id);
+// localStorage.setItem('userId', id);
 
 function signoutUser() {
     firebase.auth().signOut().then((user) => {

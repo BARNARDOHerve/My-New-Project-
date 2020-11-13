@@ -16,7 +16,9 @@ body {
     /* height: 100%; */
     background-color: #030A1A;
 }
-
+:focus{
+    outline: none;
+}
 .nav-wrapper {
     width: 10%;
 }

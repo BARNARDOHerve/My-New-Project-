@@ -6,6 +6,7 @@ async function readMore(){
     let contentWrapper = document.getElementById('contentWrapper');
 
     let docId = localStorage.getItem('docId');
+
     db.collection('blogs').doc(docId).get().then(blog => {
         storage.ref(blog.data().imageURL).getDownloadURL().then(imageURL => {
             title.innerHTML = blog.data().title;
@@ -19,3 +20,4 @@ async function readMore(){
     })
 }
 readMore();
+
