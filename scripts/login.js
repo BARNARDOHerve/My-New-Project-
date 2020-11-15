@@ -17,46 +17,81 @@ function userLogin() {
     else {
         auth.signInWithEmailAndPassword(email, password)
         .then(resultData=>{
-            // console.log(resultData);
             const uid = resultData.user.uid; 
-            // signInForm.reset();
+
             db.collection("Users").doc(uid).get().then( function(snapshot){
+
                 let childData = snapshot.data();
                 console.log(childData);
-                let firstname = childData.fname;
+
+                let firstname = childData.Fname;
                 let lastname = childData.lname;
-                let email = childData.email;
                 let role = childData.role;
-                if(role === 'StandardUser'){
-                    sessionStorage.setItem("userUID", uid);
-                    sessionStorage.setItem("username", firstname);
-                    sessionStorage.setItem("userLname", lastname);      
-                    window.location.href = "../pages/user.html";
+                
+                
+                //get blogid
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                // const blogId = urlParams.get("blogPostiud");
+                const blogId = sessionStorage.getItem("bloguid");
+                sessionStorage.setItem("userUID", uid);  
+                sessionStorage.setItem("userFname", firstname);  
+                sessionStorage.setItem("userLname", lastname);  
+                sessionStorage.setItem("userNames", lastname+' '+ firstname);  
+                if(blogId){
+                    window.location.href = `../pages/read_more.html?blogPostuid=${blogId}`;
+                } 
+                else{
+                    if(role === 'StandardUser'){
+                        window.location.href = "../pages/user.html";
+                    }
+                    else if(role === 'Admin'){
+                        window.location.href="../pages/admin.html";
+                    }
                 }
-                else if(role === 'Admin'){
-                    sessionStorage.setItem("userUID", uid);
-                    console.log(uid);
-                    sessionStorage.setItem("userFname", firstname);  
-                    sessionStorage.setItem("userLname", lastname); 
-                    sessionStorage.setItem("userEmail", email); 
-                    window.location.href="../pages/admin.html";
-                }
-                });
+            });
         })
         .catch(error=>{
             message.style.display="block";
             message.innerHTML=error.message;
         });
     }
-}
-localStorage.setItem('userId', id);
+};
+// localStorage.setItem('userId', id);
 
 function signoutUser() {
     firebase.auth().signOut().then((user) => {
         window.location.href = "../pages/login-in.html";
-
+        
     }).catch((error) => {
         alert('failed to logout')
     });
 }
 
+function signoutUserFromComment() {
+    firebase.auth().signOut().then((user) => {
+        if(user){
+            sessionStorage.removeItem("bloguid");
+            sessionStorage.removeItem("userUID");
+        }
+        window.location.href = "../pages/blog.html";
+        
+    }).catch((error) => {
+        alert('failed to logout')
+    });
+}
+
+// if(role === 'StandardUser'){
+//     sessionStorage.setItem("userUID", uid);
+//     sessionStorage.setItem("username", firstname);
+//     sessionStorage.setItem("userLname", lastname);      
+//     window.location.href = "../pages/user.html";
+// }
+// else if(role === 'Admin'){
+//     sessionStorage.setItem("userUID", uid);
+//     console.log(uid);
+//     sessionStorage.setItem("userFname", firstname);  
+//     sessionStorage.setItem("userLname", lastname); 
+//     sessionStorage.setItem("userEmail", email); 
+//     window.location.href="../pages/admin.html";
+// }

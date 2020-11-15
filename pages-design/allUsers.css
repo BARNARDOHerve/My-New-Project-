@@ -141,29 +141,56 @@ main {
 
 .setting-wrapper {
     width: 85%;
-    height: 130px;
+    height: auto;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     color: #FAF4F4;
     background: #0E4272;
     border: 3px solid   #145AC3;
     border-radius: 10px 10px;
 }
-.setting-wrapper h4 {
-    text-align: center;
-}
-.setting-wrapper a button {
-    color: #FAF4F4;
-    text-decoration: none;
-}
-.setting-wrapper button {
-    width: 30%;
-    color: #FAF4F4;
-    background: #0E4272;
-    border: 3px solid #3E68FD;
-    border-radius: 10px 10px;
-    margin-top: 5em;
+:focus{
+    outline: none;
 }
 
+.ttl{
+    margin-top: 1em;
+    font-size: 20px;
+    font-weight: bolder;
+}
+table{
+    table-layout: fixed;
+    width: 100%;
+    margin: 6%;
+}
+td{
+    word-wrap:break-word
+}
+table, th, td {
+    /* border: 1px solid gray; */
+    border-collapse: collapse;
+  }
+  th, td {
+      padding: 3px 1px;
+    text-align: left;
+  }
+th{
+    border-bottom: 4px solid black;
+    width: 100%;
+}
+tr{
+    border-bottom: 1px solid black;
+}
+.delete{
+    width: 50%;
+    color: #FAF4F4;
+    background: #0E4272;
+    border: 3px solid   #145AC3;
+    border-radius: 10px 10px;
+}
 footer {
     width: 100%;
     height: 25px;

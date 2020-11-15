@@ -5,6 +5,7 @@ async function getBlogs(){
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach((doc)=> {
+            
             storage.ref(doc.data().imageURL).getDownloadURL().then(imageURL => {
                 blogsItems+= `
                 <div class="blog-item-one">
@@ -22,13 +23,17 @@ async function getBlogs(){
     }); 
 
 }
+
 getBlogs();
 setTimeout(()=> {
     let blogContainer = document.getElementById('blogContainer');
     blogContainer.innerHTML = blogsItems;
 },5000);
 
+
+// blogPost UID  
 function setBlogId(docId){
-   localStorage.setItem('docId',docId);
-   return window.location.href = "./read_more.html";
+    localStorage.setItem("docId", docId)
+    window.location.href="../pages/read_more.html?blogPostuid="+docId;
 }
+
