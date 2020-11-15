@@ -59,8 +59,9 @@ nav ul li button {
 
 main {
     width: 93%;
-    height: 550px;
+    height: auto;
     padding: 50px;
+    background-color: blanchedalmond;
 
 }
 

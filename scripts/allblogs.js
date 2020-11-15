@@ -20,16 +20,16 @@ db.collection("blogs").get().then(function(querySnapshot) {
      });
   });
 }
-
 datafetched();
+
 //.......DELETE USER..........
 function deleteblog(blogId){
     db.collection("blogs").doc(blogId).delete().then( ()=>{
-        console.log("BLOG DELETED SUCCESSFULLY!");
+        alert("BLOG DELETED SUCCESSFULLY!");
     })
     .catch(e =>{
-        console.log("FAILED TO DELETE THIS BLOG!");
-    })
+        alert("FAILED TO DELETE THIS BLOG!");
+    });
 };
   datafetched();
   setTimeout(()=>{

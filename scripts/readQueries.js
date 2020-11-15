@@ -13,7 +13,7 @@ db.collection("user-comment").get().then(function(querySnapshot) {
     <td> ${doc.data().Name}</td>
     <td>${doc.data().Email}</td>
     <td> ${doc.data().Comment}</td>
-        <td ><input type="submit" value="Delete" onclick=ddeletequery('${doc.id}') class="delete" class="delete"></td>`
+        <td ><input type="submit" value="Delete" onclick=deletequery('${doc.id}') class="delete" class="delete"></td>`
         queriesList.appendChild(queryRow);
      });
   });
@@ -29,6 +29,6 @@ function deletequery(queryId){
         alert("FAILED TO DELETE THIS USER!");
     })
 };
-  datafetched();
-  setTimeout(()=>{
-   deletequery(), 6000});
+datafetched();
+setTimeout(()=>{
+deletequery(), 6000});
