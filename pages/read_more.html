@@ -45,16 +45,20 @@
     </header>
     <main>
        <div class="container-fluid">
+           <div id="welcomeUser"></div>
            <h4 id="titleWrapper"></h4>
            <img src="" alt="blog image" id="imageWrapper">
            <small class="author"><br> By <span id="authorWrapper"></span><br> <br> Published at: <span id="dateWrapper"></span></small>
            <p id="contentWrapper"></p>
            <form action="" class="form-container" id="blogForm" onsubmit="event.preventDefault()"> 
-                <textarea name="" id="paragraph" cols="30" rows="10" placeholder="   comments "></textarea>
-                <br></br>
-                <button id="send" >send</button>
-                <button id="loginComment"><a href="../pages/login-in.html">login</a></button>
+            <textarea class="commentTXT" name="" id="paragraph" cols="30" rows="10" placeholder="Comments......"></textarea>
+            <br></br>
+            <button id="send" >send</button>
+            <button id="logoutComment" onclick="signoutUserFromComment()">logout</a></button>
            </form>
+          
+           <div class="commentsOutput"></div>
+           <button id="loginComment"><a href="../pages/login-in.html">login</a></button>
        </div>
     </main>
     <footer>
@@ -67,7 +71,29 @@
 
     <script src="../scripts/firebase.js "></script>
     <script src="../scripts/read_more.js"></script>
+    <script src="../scripts/login.js"></script>
     <script src="../scripts/script.js "></script>
+
+    <script>
+        const user = sessionStorage.getItem("userNames");
+
+        let userUpperCase = user.toUpperCase();
+        console.log("user");
+        document.getElementById('welcomeUser').innerHTML = user;
+        function displayForm(){
+            // const user = auth.currentUser;
+            console.log(user);
+            if(user){
+                console.log(commentForm)
+                commentForm.style.display="block";
+                loginButton.style.display="none";
+            }else {
+                commentForm.style.display="none";
+                loginButton.style.display="block";
+            }
+        }
+        displayForm()
+    </script>
 </body>
 
 </html>

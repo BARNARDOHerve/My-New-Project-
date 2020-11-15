@@ -11,10 +11,10 @@ db.collection("blogs").get().then(function(querySnapshot) {
         blogRow.innerHTML+=
     `
     <td>${doc.data().title}</td>
-    <td>${doc.data().imageURL}</td>
+    <td><textarea name="" id="" cols="30" rows="10">${doc.data().imageURL}</textarea></td>
     <td> ${doc.data().author}</td>
     <td>${doc.data().date}</td>
-    <td id="blog"> ${doc.data().body}</td>
+    <td id="blog"><textarea name="" id="" cols="30" rows="10"> ${doc.data().body}</textarea></td>
     <td ><input type="submit" value="Delete" onclick=deleteblog('${doc.id}') class="delete" ></td>`
     blogsList.appendChild(blogRow);
      });
