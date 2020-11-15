@@ -38,7 +38,7 @@ async function submitData(name, email, comment, form) {
         Email: email,
         Comment: comment
     }).then(() => {
-        console.log("your commet have been sent");
+        alert("your commet have been sent");
         form.reset();
     }).catch((error) => {
         console.log(error);
